@@ -1,0 +1,128 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    background: #DDEEAA;   
+}
+
+#conteneur{
+    width: 770px; 
+    /* largeur de l'acran */
+    margin: 0 auto;
+    /* marge automatique qui centre le bloc apres l'avoir remonté le plus haut possible dans mon affichage */
+    text-align: left;
+    border: 2px solid #AABB44;
+    /* bordure autour de toute la page  */
+    background-color: white;
+    /* couleur du fond de mon conteneur */
+}
+
+h1{
+    margin: 0;
+    height: 258px;
+    /* personnaliser la hauteur de mon titre */
+    background: url(../workshop/img/colordesignpomme.png) no-repeat left top;
+   
+}
+
+h1 a{
+    /*  On donne les memes dimensions aux liens, chose possibles grace  à la propriété display: block ; qui transforme le lien en element de type block auquel on peut donner des propriétés de taille. On met aussi l'image de fond qui a les memes dimensions que le cadre ainsi créé*/
+    width: 400px;
+    height: 70px;
+    display: block;
+    background: url(../workshop/img/colordesigntitre.png) no-repeat;
+    position: relative;
+    left: 350px;
+    top: 15px;
+    text-indent: -5000px;
+    /* le text-indent négatif est fait pour pouvoir cacher le texte hore de la page (en le decalent) , ce que nous voulons */
+}
+
+ul{
+    height: 35px;
+    /* On donne une hauteur au meu, correspondant à la taille de l'image utilisée en fond */
+    margin: 0;
+    padding: 0;
+    background: url(../workshop/img/colordesignbarre.png) repeat-x 0 -25px;
+      /* l'image de fond avec un décalage de 25 pixels vers le haut */ 
+    list-style-type: none;
+    /* cache les puces */
+}
+
+ul li{
+    float: left;
+    /* on rend les li en flottant pour pouvoir exactement affiché horizontalement */
+    text-align: center;
+    /* On centre le texte */
+}
+
+ul li a{
+    width: 130px;
+    /*  */
+    color: white;
+    text-decoration: none;
+    border-right: 2px solid #dea ;
+    display: block;
+    /* Nous pouvons dimensionner les a grace à la propriété display bloc */
+    line-height: 25px;
+    font-size: 1.2em;
+    /* taille de police */
+    font-weight: bold;
+    /* mise en accentuation gras/bold de la police */
+    letter-spacing: 2px;
+    /* espacement de lettre */
+    
+       
+}
+
+ul li:hover{
+    background:url(../workshop/img/colordesignbarre.png) repeat-x 0 0;
+    /* repetition horizontale de l'image avec repeat-x */
+}
+
+main{
+    padding: 0 30px 0 100px;
+    background-image: url(../workshop/img/colordesignlateral.png);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    /* crée un espace à gauche et à droite de l'image */
+}
+
+main h2{
+    padding-left: 25px;
+    /* on décale le texte en fonction de l'image */
+    line-height: 25px;
+    /* on décale le texte en fonction de l'image en interligne */
+    font-size: 1.4em;
+    background: url(../workshop/img/colordesignminpomme.png)no-repeat left bottom;
+    color: #9b2;
+    /* couleur du texte */
+    border-bottom: 1px solid #9b2;
+}
+
+main h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    /* on décale le texte en fonction de l'image */
+    color: #9b2;
+    /* couleur du texte */
+    border-bottom: 1px solid #9b2;
+    border-left: 2px solid #9b2;
+}
+
+main p{
+    text-align: justify;
+    text-indent: 2em;
+    /* indenattion supérieur à l'état normal pour aérer le tout*/
+    line-height: 1.7em;
+    /* hauteur de la ligne supérieur à l'état normal pour aérer le tout */
+}
+
+footer{
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color: #8a0;
+}

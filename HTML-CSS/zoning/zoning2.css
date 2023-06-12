@@ -1,0 +1,101 @@
+body {
+    color: white;
+    font-size: 20px;
+}
+
+#conteneur {
+    width: 960px;
+    background-color: paleturquoise;
+    color: white;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #8e3557;
+    height: 100px;
+}
+
+nav {
+    background-color: gray;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+section {
+   height: 500px;
+    background-color: gray;
+    margin: 10px;
+}
+
+footer {
+    /* on aurait pu synthétiser le code avec header*/
+    background-color: #4a1a2c;
+    height: 100px;
+}
+
+.a {
+    
+   border: 1px solid;
+    float: left;
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
+    
+}
+
+.zone{
+    border: 1px solid;
+    float: left;
+    height: 248px;
+    width: 468px;
+    
+}
+
+.haut{
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+}
+
+
+.bas{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.couleur_1{
+    background: peachpuff;
+}
+
+.couleur_2{
+    background: #7a9eb1;
+}
+
+.couleur_3{
+    background: #415865;
+}
+
+.couleur_4{
+    background: #ffe1b3;
+}
+footer {
+    background: silver;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.clear {
+    clear: both
+}

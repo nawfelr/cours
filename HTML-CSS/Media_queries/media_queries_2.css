@@ -1,0 +1,163 @@
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+div {
+    margin: 0;
+
+}
+
+header {
+    background-color: darkred;
+}
+
+nav {
+    background-color: darkslateblue;
+    height: 50px;
+    /* 1em=16px */
+    padding-left: 2em;
+    line-height: 45px;
+    /* on peut rempleacer line-height par margin (top et bottom) */
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 2em;
+    border-right: 1px solid #fff;
+    padding-right: 2em;
+}
+
+footer {
+    background-color: palevioletred;
+    height: 100px;
+}
+
+nav a:last-child {
+    /* Il va sélectionner le dernier enfant qui se trouve à l'intérieur de nav */
+    border-right: none;
+}
+
+section {
+    /* on applique display:flex sur le parent */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+section div {
+    /* sélectionne toutes les div qui se trouvent à l'intérieur de section */
+    width: 32vh;
+    /* correspond à 46% de largeur */
+    height: 50vh;
+}
+
+.zone1,
+.zone4 {
+    background: linear-gradient(to left, #40a497, #6840a4);
+}
+
+.zone3,
+.zone2 {
+    background-color: lightblue;
+}
+
+main {
+    border: 1px solid black;
+}
+
+.zone3,
+.zone4 {
+    margin-top: 15px;
+}
+
+/* appel des medias queries */
+@media screen and (max-width:768px) {
+
+    /* j'annonce que la taille de l'écran est changé */
+    .container {
+        width: 90%;
+    }
+
+    header {
+        background-color: lightgreen;
+    }
+
+    section div {
+        width: 80vh;
+
+    }
+
+    section {
+        flex-direction: column;
+        /* on peut changer l'axe principale de flex pour avoir affichage en bloc pour chaque div */
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        font-size: 16px;
+        border: none;
+
+    }
+
+    nav {
+        height: 150px;
+        line-height: 30px;
+    }
+
+    .zone2 {
+        margin-top: 15px;
+        background-color: orangered;
+    }
+
+    footer {
+        background-color: #568e25;
+    }
+
+    /* c'est la fin de la fourchette tablette mx-width:786px */
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    /* le début d'un nouvel interval pour les tailles au dela de 992px */
+    /* Ici on ajoute le CSS pour réajuster l'affichage pour les écrans supérieurs à 992px */
+
+    .container {
+        width: 90%;
+    }
+
+    section {
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header {
+        background-color: red;
+    }
+
+    footer {
+        background-color: red;
+    }
+
+    section div {
+        width: 41vh;
+    }
+
+    .zone2,
+    .zone3 {
+        background-color: pink;
+    }
+
+    .zone1,
+    .zone4 {
+        background-image: url(../liens/image.jpg);
+        background-size: cover;
+        /* avec cover l'image couvre la totalité du bloc (même si l'image est plus grande */
+    }
+}

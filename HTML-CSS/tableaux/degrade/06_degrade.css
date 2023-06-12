@@ -1,0 +1,13 @@
+.contenu{
+    height: 45em; 
+    /* hauteur */
+    width: 45em;
+    /* largeur */
+    margin: auto;
+    /* cenntre automatiquement la balise */
+    border-radius: 50%;
+    /* arrondie les angles */
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    /* degrade qui demarre avec la premiere couleur à droite et la dernière a gauche */
+    /* lien vers un générateur de dégradés: https://cssgradient.io/ */
+}

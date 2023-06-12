@@ -1,0 +1,63 @@
+body{
+    background-color: beige;
+}
+
+#container{
+    background-color: white;
+    border: 2px solid green;
+    margin:0  auto;
+    width: 800px;
+}
+
+nav{
+    background-image: url("../workshop/img/colordesignbarre.png");
+    width: 796px;
+    text-align: center;
+    color: white ;
+    padding: 0 0.5em;
+    
+    
+    
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border-right: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    
+ 
+}
+
+
+
+h2{
+    color: yellowgreen
+}
+
+.t{
+    margin-left: 80px;
+    margin-right: 50px;
+    text-align: justify;
+    
+}
+
+h2{
+    border-bottom:2px solid yellowgreen;
+    width: 100%;   
+}
+
+.s{
+    border-left: 4px solid yellowgreen;
+}
+
+.textl a{
+    margin-left: 600px;
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+

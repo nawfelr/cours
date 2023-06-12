@@ -1,0 +1,98 @@
+body {
+    font-family: sans-serif;
+    font-style: 1.5em;
+}
+
+.left,
+.right {
+    margin-top: 5em;
+}
+
+ul {
+    /* séléction toutes les listes <ul> */
+    list-style: none;
+    /* suppression des puces des listes */
+    float: left;
+    /* effet flottant à gauche */
+    margin: 0;
+    padding: 0;
+}
+
+.left ul {
+    margin: 3.2em 0 0 0;
+}
+
+.left ul li {
+    /* tous les <li> dans la liste <ul> dans la classe .left */
+    border-bottom: 1px solid antiquewhite;
+    border-left: 1px solid antiquewhite;
+    padding: 1em;
+    width: 10em;
+}
+
+.left ul li:first-child {
+    /* premier <li> de la liste <ul> ayant la classe.left */
+    border-top: 1px solid #ccc;
+}
+
+ul.liste li {
+    /* tous les li de la liste <ul> ayant la class .list */
+    border-left: 1px solid #ccc;
+}
+
+.right .change ul li {
+    /* tous les <li> dans les listes <ul> ayant la classe .change elle meme enfant de la class .right */
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+}
+
+.right .change ul li:first-child {
+    /* tous les 1er enfants de <li> de la liste <ul> ayant la classe.change, elle-même enfant d'une class .right */
+
+    background-color: #5d5d5d;
+    color: #fff;
+    font-weight: bold;
+    /* style de police gras */
+}
+.right .change ul li:last-child{
+    /* dernier <li> de la liste <ul> ayant la class .change, elle même contenu d'une class.right */
+    border-bottom: 1px solid #ccc;
+}
+
+/* effet de transition au survol de la souris */
+
+.right .change ul:hover{
+/* au survol de la souris (pseudo-class : hover= on selectionne la liste <ul> ayant la class .change elle même enfants de la class .right */
+background: linear-gradient(#d5d5d5, #8a8a8a);
+cursor: pointer;
+/* changement de l'affichage du curseur */
+transform: scale(1.4);
+/* échelle de zoom */
+transition-duration: 2s;
+/* durée de l'effet de transition */
+}
+
+.right .change ul:hover li:first-child{
+    /* au survol de la souris on sélectionne le premier <li> de la liste <ul> ayant la class .change, elle même enfant de la class .right */
+    background-color: #000;
+
+}
+
+.change:hover #premium{
+    color: #b9f2ff;;
+}
+
+.change:hover #gold {
+    color: gold;
+}
+
+.change:hover #silver {
+    color: #BFC1c2;
+}
+
+.clear {
+    clear: both;
+}

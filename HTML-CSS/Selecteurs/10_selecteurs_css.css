@@ -1,0 +1,72 @@
+
+
+nav{
+    background-color: black;
+    padding: 0 0.5em;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top:0; 
+    /* position à partir du haut de l'écran */
+    left: 0;
+    /* position à partir du haut de l'écran */
+    margin: 0 0 20px;
+
+}
+
+
+
+nav a:hover{
+    background-color: orangered;
+    color: black;
+}
+
+/* 1er container */
+
+.container{
+    width: 70%;
+    margin: 4% auto 2% auto;
+    background-color:beige;
+    padding: 2em;
+}
+mark{
+    background-color: rgb(11, 11, 11);
+    color: beige;
+}
+/* 2eme container */
+
+.container1{
+    width: 70%;
+    margin: 2% auto;
+    /* 2% auto 2% auto */
+    background-color:beige;
+    padding: 2%;
+}
+
+/* container 3 et 4 imbriqués dans le container1 */
+
+.container2, .container3{
+    width: 44.5%;
+    background-color: antiquewhite;
+    padding: 2%;
+    float: left;
+}
+
+.container2{
+    margin-right:1.5%
+}
+
+.container3{
+    margin-right:1.5%
+}
+
+/* 5éme container */
+
+.container4{
+margin-top: 2em;
+}
+
+.clear{
+    clear: both;
+}
+
