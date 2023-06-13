@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Shadows+Into+Light&display=swap');
+
+
+* {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+
+
+}
+
+section {
+    width: 75%;
+    height: 1000px;
+}
+
+h2{
+    text-align: left;
+}
+
+header div {
+    font-size: 0.3em;
+    /* taille de police */
+    color: darkred;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+}
+
+nav ul li {
+    width: 23%;
+    /*  */
+
+    text-decoration: none;
+    display: inline-block;
+    /* Nous pouvons dimensionner les a grace à la propriété display bloc */
+    text-align: center;
+    word-spacing: 1px;
+    font-size: 0.7em;
+    /* taille de police */
+    font-weight: lighter;
+    /* mise en accentuation gras/bold de la police */
+
+}
+
+
+.plat {
+    width: 250px;
+    display: flex;
+    float: left;
+
+    justify-content: start;
+
+}
+
+.texte1 {
+
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    
+}
+
+
+
+.plat p {
+
+    /* Pour exemple de plat  */
+    font-size: 0.5em;
+    font-style: italic;
+    text-align: end;
+    
+
+
+}
+
+
+
+.plat .description p {
+    /* Pour merlu.... */
+    font-size: 0.6em;
+    width: 150px;
+    text-align: start;
+    font-style: normal;
+    line-height: 1%;
+
+
+}
+
+.p1 {
+    text-align: end;
+}
+
+
+
+
+/* .....Partie 2..... */
+
+
+
+
+.salle {
+    /* pour l'ensemble */
+    width: 450px;
+    height: 200px;
+    display: flex;
+    float: left;
+    text-align: left;
+
+
+}
+
+.text2 {
+    /* Pour le texte de la partie Salle */
+    height: 150px;
+    width: 500px;
+    font-size: 0.6em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.texte2 .description2 p {
+    text-align: left;
+}
+
+
+/* ..............Partie 3 .............. */
+
+.service {
+
+    width: 450px;
+    height: 200px;
+    display: flex;
+    float: left;
+}
+
+.text3 {
+    /* Pour le texte de la partie Service */
+    height: 150px;
+    width: 500px;
+    font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+}
+
+.service .texte3 .description3 p {
+text-align: justify;
+    text-align: left;
+    text-justify: auto;
+    font-style: italic;
+}
+
+
+
+/* ................Partie 4.............. */
+
+
+.dressage {
+
+    width: 450px;
+    height: 200px;
+    display: flex;
+    float: left;
+}
+
+.text4 {
+    /* Pour le texte de la partie Dressage */
+    height: 150px;
+    width: 500px;
+    font-size: 0.79em;
+    display: flex;
+    flex-direction: column;
+}
+
+.service .texte4 .description4 p {
+    text-align: justify;
+    text-align: left;
+    text-justify: auto;
+    font-style: italic;
+}
+
+
+/* ................Partie 5.............. */
+
+
+.gout {
+
+    width: 450px;
+    height: 200px;
+    display: flex;
+    float: left;
+}
+
+.text5 {
+    /* Pour le texte de la partie GOUT */
+    height: 150px;
+    width: 500px;
+    font-size: 0.68em;
+    display: flex;
+    flex-direction: column;
+}
+
+.service .texte5 .description5 p {
+    text-align: justify;
+    text-align: left;
+    text-justify: auto;
+    font-style: italic;
+}
+
+/* footer */
+
+footer{
+    /* Modifier l'alignement et la taille du footer */
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 450px;
+    font-size: 0.6em;
+    
+}
+
+footer img{
+    width: 15%;
+    text-align: center;
+}
+
+footer h2 {
+    /* Pour modifer l'alignement et l"espacement des lettre du footer */
+    text-align: center;
+    letter-spacing: 4px;
+   
+}
+
+
+
+
+
