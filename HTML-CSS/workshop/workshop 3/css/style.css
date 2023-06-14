@@ -1,0 +1,205 @@
+/*............................................ On commence avec ce qui concerne le header..................................... */
+
+
+header {
+    width: 100%;
+    background: linear-gradient(rgba(45, 253, 149) 0%, rgba(34, 193, 195) 100%);
+    text-decoration: none;
+
+}
+
+header,
+.marque,
+nav,
+img {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+header img {
+    width: 30px;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+nav ul li {
+
+    display: inline-block;
+
+}
+
+nav ul {
+    text-align: end;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+
+/*............................................ On continu avec le banner..................................... */
+
+
+.banner {
+    background: rgba(34, 193, 195);
+    border: double white 0.5px;
+   
+   
+
+
+}
+
+.banner marquee {
+    color: white;
+}
+
+/*............................................ On continu avec le Main et ses articles..................................... */
+
+/* .........................................................Article 1................................................. */
+
+article:first-of-type {
+    margin: 10px auto;
+    background: linear-gradient(rgb(191, 129, 148), rgb(86, 166, 241) 100%);
+    border-radius: 30px;
+    height: 350px;
+    width: 70%;
+    display: flex;
+    box-shadow: 10px 5px 5px lightskyblue;
+
+}
+
+
+article:first-of-type section:first-child {
+    min-width: 50%;
+    margin: auto;
+
+
+}
+
+article:first-of-type img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+
+}
+
+
+article:first-of-type section:last-child {
+    min-width: 50%;
+    float: right;
+    margin-top: 25px;
+
+}
+
+article:first-of-type section:last-child p,
+article:first-of-type section:last-child h2 {
+    color: white;
+    text-align: left;
+    margin-right: 30px;
+}
+
+/* .........................................................Article 2................................................. */
+
+article:nth-of-type(2) {
+    margin: 20px auto;
+    background: linear-gradient(rgb(97, 227, 194), rgb(70, 134, 195));
+    border-radius: 30px;
+    height: 350px;
+    width: 70%;
+    display: flex;
+    box-shadow: 10px black;
+
+}
+
+
+article:nth-of-type(2) section:first-child {
+    min-width: 50%;
+    float: right;
+    margin-top: 25px;
+    padding-left: 25px;
+
+
+}
+
+article:nth-of-type(2) img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+
+
+}
+
+
+article:nth-of-type(2) section:last-child {
+    min-width: 50%;
+    margin-top: 30px;
+    padding-left: 200px;
+
+}
+
+article:nth-of-type(2) section:first-child h2,
+article:nth-of-type(2) section:first-child p {
+    color: white;
+    text-align: center;
+    margin-right: 30px;
+}
+
+/* .........................................................Article 3................................................. */
+
+article:last-of-type {
+    margin: 20px auto;
+    background: linear-gradient(rgb(226, 132, 23), rgb(92, 144, 181) 100%);
+    border-radius: 30px;
+    height: 350px;
+    width: 70%;
+    display: flex;
+    box-shadow: 10px black;
+    
+
+}
+
+
+article:last-of-type section:first-child {
+    min-width: 50%;
+    margin: auto;
+   
+
+}
+
+article:last-of-type img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+
+}
+
+
+article:last-of-type section:last-child {
+    min-width: 50%;
+    float: right;
+    margin: auto;
+   
+
+
+}
+
+ 
+
+article:last-of-type section:last-child p, article:last-of-type section:last-child h2{
+    color: white;
+    text-align: end;
+    margin-right: 30px;
+}
