@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page Image</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <meta name="description" content="Mes image en HTML/CSS">
+</head>
+
+<body>
+
+    <header><!-- Zone du haut, ex:logo, slogan, bannière .... -->
+        <div id="logo">
+            <a href="#logo">
+                <button type="button">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                </button>
+            </a>
+            <img src="./img/spiderman-logo-illustration.jpg" alt="logo">
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+        <div id="social">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </header>
+
+    <nav><!-- Zone du menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Texte</a>
+            <a href="selecteurs.html">Selecteurs</a>
+            <a href="image.html" class="active">Image</a>
+            <a href="position.html">Position</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="liste.html">Liste</a>
+            <a href="lien_menu.html">Lien & Menu</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+        </div>
+
+    </nav>
+
+    <!-- main>h2{Images}+section.imageFond>h3{Image de fond en CSS}+p>lorem50 -->
+    <main>
+        <h2>Images</h2>
+        <section class="imageFond">
+            <h3>Image de fond en CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium similique ad ex repellat quaerat vel
+                reprehenderit tempore dolores distinctio blanditiis impedit, fugit quidem veniam eius voluptas nesciunt
+                consectetur beatae! Illo vitae sed ex obcaecati omnis unde dolorem dolores dolorum. Quidem porro fuga,
+                nesciunt ratione asperiores fugiat nulla! Facilis, esse soluta?</p>
+        </section>
+
+        <section>
+            <h3>Image dans HTML</h3>
+            <figure>
+                <img src="./img/toureiffel.jpg" title="Cette photo montre la tour Eiffel de Paris"
+                    alt="Cette photo montre la tour Eiffel de Paris">
+
+                <figcaption>Une photo de la tour Eiffel</figcaption>
+            </figure>
+        </section>
+
+        <section class="rotationImg">
+            <h3>Image en HTML / CSS</h3>
+            <img src="./img/spiderman-logo-illustration.jpg" class="image" alt="">
+            <img src="./img/spiderman-logo-illustration.jpg" class="image" alt="">
+            <img src="./img/spiderman-logo-illustration.jpg" class="rotation360 image" alt="">
+        </section>
+    </main>
+
+
+
+    <footer>
+        <small>
+            &copy; 2023 POISSY
+        </small>
+    </footer>
+</body>
+
+</html>
