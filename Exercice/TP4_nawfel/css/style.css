@@ -1,0 +1,346 @@
+
+body{
+    margin: 0 ;
+    background-image: url(../img/fond.png);
+    width: 100%;
+    font-family: 'Arial', 'Helvetica', serif;
+  
+}
+
+
+/* ********************************************     CONTAINER  ************************************************************** */
+
+
+#container {
+    width: 1000px;
+    height: 928px;
+    margin: 20px auto;
+    
+    border: 0.5px solid black;
+    box-shadow: 1px 1px 10px grey;
+
+}
+
+/* **************************************************** HEADER ******************************************************************************* */
+
+header{
+    
+    width: 1000px;
+    height: 140px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+header div {
+    float: left;
+}
+
+
+/* ----------------------------------------------Réglage de la taille, et de la position du logo---------------------------------------------------------- */
+
+
+
+
+header .logo{
+    position: relative;
+    left:10px;
+    top: 25px;
+}
+
+header .logo img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* ----------------------------------------------Réglage de la taille, et de l aposition du TITRE et de son texte ---------------------------------------------------------- */
+
+
+header .titre{
+    position: relative ;
+    left: 30px;
+    line-height: 5px;
+}
+
+
+
+header .titre h1{
+    font-size: 2.5em;
+}
+
+header .titre p{
+    color: rgb(224, 36, 168);
+    text-align: center;
+}
+
+
+
+/* ----------------------------------------------Réglage de la taille, et de la position du de la div AIDE et de son texte ---------------------------------------------------------- */
+
+header .aide{
+   position: relative;
+   left: 150px;
+}
+
+header .aide h2{
+    width: 300px;
+    font-size: 2.5em;
+    line-height: 5px;
+    color: rgb(103, 220, 255);
+}
+
+header .aide p{
+    background-image: url(../img/aide.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 50px;
+    color: rgb(103, 220, 255);
+    text-indent: -95px;
+}
+
+/* ----------------------------------------------Réglage de la taille, et de la position du PANIER et de son texte ---------------------------------------------------------- */
+
+
+
+header .panier {
+   background: rgb(103, 220, 255);
+   position: relative;
+   left: 150px;
+   width: 267px;
+}
+
+header .panier p{
+   color: white;
+   text-align: center;
+}
+
+header .panier p a{
+    text-decoration: none;
+    color: white;
+}
+
+header .panier hr{
+    height: 2px;
+    position: relative;
+    top: -18px;
+}
+
+header .panier img{
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+
+header .panier p:last-of-type{
+    position: absolute;
+    top: 50px;
+    left: 95px;
+   
+}
+
+/* **************************************************** NAV BARRE ******************************************************************************* */
+
+.clear{
+    clear: both;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background:rgb(103, 220, 255);
+  
+}
+
+nav ul li {
+    width: 16.66%;
+    float: left;
+    display: inline;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+   
+   
+}
+
+nav ul {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li a{
+   align-items: center;
+   text-decoration: none;
+   color: white;
+   height: 100%;
+   width: 100%;
+   font-size: 1em;
+   position: relative;
+   top:10px
+}
+
+nav ul li:hover{
+    transition: 1s;
+  background: rgb(224, 36, 168);
+}
+
+
+
+
+
+
+/* ********************************************     SECTION IMAGE  ************************************************************** */
+
+
+#container section:first-of-type{
+    width: 100%;
+    height: 350px;
+}
+
+#container section:first-of-type img{
+    height: 350px;
+    width: 100%;
+}
+
+
+/* ********************************************     SECTION TEXTE ************************************************************** */
+
+
+ .texte{
+    width: 100%;
+        height: 170px;
+        margin: auto 10px;
+       
+}
+
+
+.texte h3{
+    color: rgb(103, 220, 255);
+}
+
+.texte article{
+    float: left;
+}
+
+
+.texte p{
+    font-size: 0.8em;
+}
+
+.texte article:first-of-type{
+    width: 20%;
+}
+
+.texte article:nth-last-of-type(2){
+    width: 60%;
+}
+
+.texte article:last-of-type{
+    width: 20%;
+}
+
+
+
+/* ********************************************     SECTION CARD  ************************************************************** */
+
+/* -------------CARD ----------------- */
+
+.card{
+    width: 100%;
+    height: 150px;
+    margin: auto 20px;
+    font-size: 0.9em;
+}
+
+.cards{
+    width: 31%;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    
+    margin-right: 10px;
+}
+
+
+
+.card .cards{
+    float: left;
+    overflow: hidden;
+}
+
+
+
+.card .cards p{
+    font-size: 0.7em;
+    position: relative;
+    top: -10px;
+    left: 60px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.card .cards a{
+    position:relative ;
+    left: 250px;
+    color: rgb(103, 220, 255);
+}
+
+.card .cards  h4{
+    background: grey;
+    text-align: center;
+
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.card .cards  img{
+    width: 15%;
+}
+
+.card .cards:first-of-type img{
+    width: 5%;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+
+
+
+
+/* ********************************************  FIN   SECTION CARD  ************************************************************** */
+
+/* ********************************************  DEBUT   SECTION FOOTTER  ************************************************************** */
+
+footer {
+    background: rgb(103, 220, 255);
+    height: 35px;
+}
+
+footer ul li{
+    width: 14%;
+    display: inline;
+    
+
+    
+}
+
+footer  ul li a {
+    padding: 25px;
+    font-size: 0.6em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 8px;
+}
+
