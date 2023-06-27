@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passage à la ligne</title>
+
+
+
+<style>
+
+
+/*
+ Nous pouvons décider comment les items flexibles doivent se comporter lorsqu'il n'y a pas assez de place dans le conteneur.
+ 
+ Pour cet exemple, nous definisssons la distribution en ligne "flex-direction:row;", qui est la valeur par defaut de tous les items flexibles.Pour tous les paragraphes enfants, nous imposons une largeur de 300px
+
+ */
+ 
+ .boite-flexible{
+    display: flex;
+    flex-direction: row;
+    
+
+    /* flex-flow: row wrap; */
+    /* Flex-flow est la syntaxe courte utilisée flex-direction et flex-wrap */
+
+    border: solid 1px black;
+ }
+
+ .boite-flexible p{
+    width: 300px;
+ }
+
+
+</style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="boite-flexible">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus quis autem quae dolor vero,
+            modi qui veniam, facilis labore, a nobis odio debitis facere error non esse ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore distinctio molestias voluptatibus dignissimos
+            provident alias, libero nihil incidunt facere possimus natus. Quibusdam autem doloremque provident eum,
+            porro voluptates esse fugit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus est esse illo amet cum
+            doloremque mollitia a expedita rerum officiis, accusantium sequi natus omnis dolor libero nulla culpa
+            impedit.</p>
+    </div>
+    
+</body>
+</html>
