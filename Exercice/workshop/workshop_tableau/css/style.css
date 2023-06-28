@@ -1,0 +1,70 @@
+/* ----------------------------------------CONTAINEUR DE LA PAGE------------------------------------------ */
+body{
+    width: 800px;
+        margin: 20px auto;
+}
+
+#container {
+    width: 800px;
+    margin: 20px auto;
+}
+
+/* ----------------------------------------HEADER DE LA PAGE------------------------------------------ */
+
+header {
+    width: 0;
+    padding: 0;
+    background: #F5F5F5;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+header img {
+    width: 140px;
+    height: 50px;
+    position: relative;
+    top: 20%;
+
+    margin: 0;
+
+}
+
+header h1 {
+    margin: 0;
+    text-align: right;
+    line-height: 80px;
+
+    font-size: 0.9em;
+    width: 300px;
+}
+
+
+
+
+/* ----------------------------------------BODY DE LA PAGE------------------------------------------ */
+
+
+
+/* ----------------------------------------TABLEAU 1------------------------------------------------ */
+
+table{
+
+  
+    height: 500px;
+    width: 800px;
+    border-bottom: 1px solid grey;
+}
+
+table thead th p{
+    position: relative;
+    left: 200px;
+}
+
+
+img{
+    max-width: 100%;
+}

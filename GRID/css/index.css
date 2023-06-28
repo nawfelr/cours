@@ -1,0 +1,48 @@
+.wrapper0, .wrapper1{
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 3vh;
+    display: grid;
+    grid-template-columns: 100px 100px 100px; /*EMMET gtc*/
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 3px;
+}
+
+.wrapper2{
+    width: 500px;
+    margin: 0 auto;
+}
+
+div:not(p){
+    color: antiquewhite;
+}
+
+.wrapper{
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5,100px);
+}
+
+.c{
+    background-color: #97d8b2;
+}
+
+div.c{
+    border: 2px solid #055864;
+}
+
+div.vide{
+    border: 2px solid #03292f ;
+}
+
+.wrapper > div{
+    background-color: darkred;
+}
+
+div.wrapper1 div:nth-child(1){
+    background: darkred;
+    grid-column-start: 1; /*ma 1ere div commence à la premiere ligne de la grille*/
+    grid-column-end: 3;
+}
