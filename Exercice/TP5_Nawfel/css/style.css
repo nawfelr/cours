@@ -1,0 +1,184 @@
+/* -----------------------------------------------DEBUT DU HEADER------------------------------------------ */
+
+header{
+    width: 100%;
+    background: url(../img/fond.png);
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+header .haut {
+    background: rgb(88, 88, 88);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 23px;
+    
+}
+
+
+header .haut p:nth-child(2){
+   display: flex;
+   flex-direction: row;
+  
+}
+
+header i{
+    margin: 0 3px;
+}
+
+
+/* -----------------------------------------------BAS DU HEADER------------------------------------------ */
+
+
+header .bas{
+    display: flex;
+   
+}
+
+/* Taille des images du header */
+
+
+header .titre img{
+    width: 35%;
+    background: transparent;
+}
+
+header .compte img{
+width: 65px;
+height: 65px;
+}
+
+
+/* Disposition du bas du header */
+.titre{
+    width: 50%;
+    position: relative;
+    top: 45px;
+    left: 55px;
+}
+
+
+.titre h1{
+    font-size: 1.5em;
+}
+
+
+
+
+.compte{
+    width: 50%;
+}
+
+.compte ul {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+
+.compte ul li{
+    list-style: none;
+    display: flex;
+   
+}
+.compte a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+
+.compte a span{
+    font-weight: bold;
+
+}
+
+/* -----------------------------------------------FIN DU HEADER------------------------------------------ */
+
+
+/* -----------------------------------------------DEBUT DE LA NAV------------------------------------------ */
+
+
+.navbar ul li a {
+    font-weight:bold ;
+    
+}
+
+/* -----------------------------------------------CONTAINER------------------------------------------ */
+#container{
+    margin: 28px 170px;
+   
+}
+
+
+
+
+/* -----------------------------------------------DEBUT DU BODY------------------------------------------ */
+
+.start{
+
+    width: 100%;
+   display: flex;
+}
+
+.start .carousel{
+    width: 80%;
+   
+}
+
+.start .end{
+    width: 30%;
+}
+
+.fig img{
+    width: 300px;
+    height: 255px;
+}
+
+figcaption{
+    background: rgb(231, 43, 74);
+    color: white;
+    text-align: center;
+}
+
+/* -----------------------------------------------DEBUT De la partie LOGO------------------------------------------ */
+.logo{
+    float: left;
+    display: flex;
+}
+.logo .img{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+  width: 1300px;
+   height: 200px;
+}
+
+.img p{
+    
+    margin: 0;
+}
+
+.logo div{
+    display: flex;
+    align-items: center;
+    width: 230px;
+
+}
+
+
+/* -----------------------------------------------DEBUT De la section CARD------------------------------------------ */
+
+
+
+.carte1{
+    width: 100%;
+    margin: auto ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carte2{
+    margin: auto;
+        display: flex;
+        justify-content: space-around;
+}
