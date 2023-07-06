@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:ital,wght@1,300&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@100&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* height: 120px; */
+    background-color: rgb(36, 36, 35);
+}
+
+.header_haut {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header h1 {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 80px;
+    margin: auto;
+}
+
+
+
+header img {
+    width: 115px;
+    height: 120px;
+}
+
+.panier{
+ padding-top: 15px;
+    width: 8%;  
+}
+
+header a{
+    text-decoration: none;
+    color: antiquewhite;   
+}
+
+.panier i{
+    
+    margin-left: 50px;
+
+    
+}
+
+header p{
+    text-align: center;
+}
+
+
+.imgf{
+    background: url(../img/luke-stackpoole-ej8pKvHDg_c-unsplash.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+.imgf img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.cartes{
+    margin: auto;
+    height: 200px;
+
+    width: 50%;
+}
