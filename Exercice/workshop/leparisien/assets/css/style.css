@@ -107,3 +107,16 @@ nav ul li:nth-child(13) a:hover {
     font-weight: bold ;
     border-bottom: 2px solid rgb(2, 195, 195) ;  
 }
+
+.soldes{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.soldes img{
+    height: 500px;
+    width: 900px;
+    
+   
+}
