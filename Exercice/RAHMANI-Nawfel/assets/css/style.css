@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'Liberation';
+    src: url(../fonts/LiberationSans-Regular-webfont.ttf);
+}
+
+@font-face {
+    font-family:'LiberationBold' ;
+    src: url(../fonts/LiberationSans-Bold-webfont.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    background-color: #222222;
+    font-family: 'Liberation';
+}
+/* ------------------------------Partie HEADER---------------------------- */
+header {
+    background-image: url(../img/background.jpg);
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre img {
+    width: 335px;
+    height: 90px;
+    margin-bottom: 50px;
+}
+
+.right {
+    width: 50%;
+}
+
+.right>p {
+
+    text-align: right;
+    margin-bottom: 128px;
+    font-size: 1.3em;
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+header nav ul li {
+
+    text-align: end;
+}
+
+header nav ul li a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+    font-family: 'LiberationBold';
+    font-weight: bold;
+}
+
+/* ----------------------FIN DU HEADER------------------------------------ */
+
+/* --------------------------------PARTIE CORPS--------------------------- */
+
+#container {
+    background: rgb(207, 207, 207);
+    margin: 10px auto 0;
+    width: 60%;
+}
+
+#container .fight  {
+    background-image: url(../img/header-page-catalogue.png); 
+    background-size: cover; 
+    height: 240px; 
+}
+
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxe {
+    margin-left: 135px;
+    width: 400px;
+}
+
+.boxe h2 {
+    background: rgb(50, 50, 50);
+    color: orange;
+    font-size: 2em;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    left: 315px;
+}
+
+.boxe>p {
+    background: white;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    width: 350px;
+    bottom: 35px;
+}
+
+.vente {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background: rgb(50, 50, 50);
+    color: white;
+    font-size: 1.1em;
+    padding: 3px;
+    width: 50%;
+    text-align: center;
+}
+
+.vente p {
+    font-size: 1.7em;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    color: orange;
+}
+
+#container nav {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+}
+
+
+
+#container nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background: white;
+    border-radius: 10px;
+    width: 600px;
+    margin: 20px auto 0;
+    padding: 8px;
+}
+
+
+
+#container nav ul a {
+    display: flex;
+    font-size: 1em;
+    text-decoration: none;
+    color: #222222;
+    align-items: center;
+}
+
+#container nav ul a i {
+    width: 20px;
+    
+}
+
+/* --------------------------------FIN DU CORPS--------------------------- */
+
+/* --------------------------------DEBUT DU FOOTER--------------------------- */
+
+footer {
+    background-color: #676767;
+    margin: 0;
+    padding-top: 50px;
+
+}
+
+.foot {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 125px;
+    margin-bottom: 20px;
+}
+
+.logo p {
+width: 280px;
+font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.reseaux {
+    display: flex;
+    margin: 40px auto;
+    justify-content: space-around;
+    width: 250px;
+}
+
+.reseaux img {
+    width: 27px;
+    height: 30px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* --------------------------------FIN DU FOOTER--------------------------- */
+
+@media screen and (max-width:576px) {
+    /* ------------------------------Partie HEADER---------------------------- */
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .titre {
+        margin: 0 auto 30px
+    }
+
+    .titre img {
+        margin-bottom: 5px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right p {
+        margin-bottom: 10px;
+        text-align-last: left;
+        font-size: 1.3em;
+    }
+
+    .right nav a {
+        font-size: 1em;  
+    }
+
+        /* ----------------------FIN DU HEADER------------------------------------ */
+    
+        /* --------------------------------PARTIE CORPS--------------------------- */
+
+    #container{
+        width: 90%;  
+    }
+
+    .fight{
+        width: 100%;
+    }
+
+ 
+
+    /* boxe  */
+    .boxe {
+        margin: 10px 85px;
+    }
+
+    .boxe img {
+        width: 100%;
+    }
+
+    .boxe h2 {
+        position: relative;
+        left: 300px;
+        font-size: 1.5em;
+        width: 80px;
+    }
+
+    .vente span{
+        margin-right: 15px;
+    }
+
+    #container nav ul {
+        margin: 0;
+        width: 95%;
+        font-size: 0.8em;
+        margin: 0 auto;
+    }
+
+    #container nav a {
+        text-align: left;
+    }
+
+        /* ----------------------FIN DU CORPS------------------------------------ */
+    
+        /* --------------------------------PARTIE FOOTER --------------------------- */
+
+    .logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo img {
+        position: relative;
+        right: 60px;
+        margin-left: 180px;
+    }
+
+
+
+
+
+}
