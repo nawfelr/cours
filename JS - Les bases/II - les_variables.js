@@ -1,4 +1,3 @@
-
 // ======= II - LES VARIABLES =========
 
 
@@ -11,7 +10,7 @@
 // Les variables sont des conteneurs dans lesquels on peut stocker des valeurs. 
 // Pour commencer, il faut déclarer une variable avec le mot-clé var en le faisant suivre de son nom :   
 
-var maVariable;
+let maVariable;
 
 /* Note 1: Un point-virgule en fin de ligne indique là où se termine l'instruction ; 
 *          Pas impératif mais une bonne pratique.  
@@ -32,38 +31,48 @@ var maVariable;
 
 // Je déclare ma variable pour la première fois. On lui donne une valeur :
 
-    var maVariable;
-    maVariable  = 'Bob';
+let maVariable;
+maVariable = 'Bob';
 
 // On peut faire les deux opérations sur une même ligne :
 
-    var maVariable = 'Bob';
+let maVariable = 'Bob';
 
 // Vous retrouvez la valeur en appelant simplement la variable par son nom :
 
-    maVariable;
+maVariable;
 
 // Une fois qu'on a donné une valeur à une variable, on peut la changer plus loin :
-        
-    var maVariable = 'Bob';
-    maVariable = 'Étienne';
+
+let maVariable = 'Bob';
+maVariable = 'Étienne';
 
 
 // Tester:
-    var a;
-    console.log(a); //undefined
+let a;
+console.log(a); //undefined
 
-    var a;
-    a = 9.53;
-    console.log(a); //9.53
+a = 9.53;
+console.log(a); //9.53
 
-    var a = 3.14;
-    console.log(a); //9.53
+a = 3.14;
+console.log(a); //9.53
 
-    var b = 0; // b contient la valeur 0
-    b += 1; // b contient la valeur 1
-    b++; // b contient la valeur 2
-    console.log(b); // Affiche 2
+let b = 0; // b contient la valeur 0
+b += 1; // b contient la valeur 1
+b++; // b contient la valeur 2
+console.log(b); // Affiche 2
+
+
+// VARIANTES DANS LA CREATION DE VARIABLES
+
+// Constante : C'est une variable dont la valeur est constante. On ne pourra pas changer sa valeur une fois déclarée
+
+const maVariable = "Bob";
+maVariable = "Emmanuelle"; // Message d'erreur s'affiche car on ne peut pas changer la valeur initiale
+
+// Var : Ancienne méthode de déclaration de variables avant 2015. Fait la même chose que let. Il faut éviter de l'utiliser aujourd'hui.
+var maVariable = "Bob";
 
 
 // B - LES TYPES
@@ -73,28 +82,28 @@ var maVariable;
 //    -> Une suite de caractères connue sous le nom de chaîne. 
 //    -> Pour indiquer que la valeur est une chaîne de caractère, il faut la placer entre guillemets.	
 
-    var maVariable = 'Bob';
+let maVariable = 'Bob';
 
 
 //    ==== Nombre ====	
 //    -> Un nombre.  
 //    -> Les nombres ne sont pas entre guillemets.	
 
-    var maVariable = 10;
+let maVariable = 10;
 
 
 //    ==== Booléen ====	
 //  -> Une valeur qui signifie vrai ou faux. 
 //  -> true/false sont des mots-clés spéciaux en JS, ils n'ont pas besoin de guillemets.		
 
-    var maVariable = true;
+let maVariable = true;
 
 
 //    ==== Tableau ====	
 //   -> Une structure qui permet de stocker plusieurs valeurs dans une seule variable. 	
 //   -> Référez‑vous à chaque élément du tableau ainsi : maVariable[0], maVariable[1], etc.
-		
-    var maVariable = [1,'Bob','Étienne',10];
+
+let maVariable = [1, 'Bob', 'Étienne', 10];
 
 
 //    ==== Objet ====	
@@ -102,16 +111,16 @@ var maVariable;
 //    -> Tout est objet en JS et peut être stocké dans une variable.
 //    -> Gardez cela en mémoire tout au long de ce cours.
 
-var maVariable = document.querySelector('h1'); 
+let maVariable = document.querySelector('h1');
 
 
 
 // C - LES COMMENTAIRES 
 
-    // Commentaire sur une ligne
+// Commentaire sur une ligne
 
-    /* Commentaire sur -------------------
-    -------------------plusieurs lignes */
+/* Commentaire sur -------------------
+-------------------plusieurs lignes */
 
 
 // D - LA NOTION D'EXPRESSION
@@ -123,48 +132,41 @@ var maVariable = document.querySelector('h1');
 
 
 // expression dont la valeur est le nombre 5
-    var a = 5;
+let a = 5;
 
 // b est une expression dont la valeur est celle de a (ici 5)
-    var a = b;
+a = b;
 
 // (b + 2) est une expression
 
 // Sa valeur est celle de b augmentée de 2 (ici 7)
 
-    b = b + 2; // d contient la valeur 7
-    console.log(b); // Affiche 7
+b = b + 2; // d contient la valeur 7
+console.log(b); // Affiche 7
 
 // L'utilisation des parenthèses pour la priorité des opérateurs 
 // est la même qu'en mathématiques.
 
-    var e = 3 + 2 * 4; // e contient la valeur 11
-    e = (3 + 2) * 4; // e contient la valeur 20
+let e = 3 + 2 * 4; // e contient la valeur 11
+e = (3 + 2) * 4; // e contient la valeur 20
 
 
-// E - INTERECTION AVEC L'UTILISATEUR (tester sur jsfiddle)
+// E - INTERACTION AVEC L'UTILISATEUR (tester sur jsfiddle)
 
-    var prenom = prompt("Entrez votre prénom :");
-    alert("Bonjour, " + prenom);
+let prenom = prompt("Entrez votre prénom :");
+alert("Bonjour, " + prenom);
 
 
 // F - APPLICATIONS :
-// Observez et tentez de prévoir les valeurs finales de chaque variable.
+// Observez et tentez de prévoir les valeurs finales de chaque letiable.
 
-    var a = 2;
-    a = a - 1;
-    a++;
-    // a = 2
-    var b = 8;
-    b += 2;
-    //  b= 10
-    var c = a + b * b;
-    // c = 102
-    var d = a * b + b;
-    // d = 30
-    var e = a * (b + b);
-    // e = 40
-    var f = a * b / a;
-    // f = 10
-    var g = b / a * a;
-    // g = 10
+let a = 2;
+a = a - 1;
+a++; // 2
+let b = 8;
+b += 2; // 10
+let c = a + b * b; // 102
+let d = a * b + b; // 30
+let e = a * (b + b); // 40
+let f = a * b / a; // 10
+let g = b / a * a; // 10

@@ -22,47 +22,16 @@ A la fin du jeu, le joueur a la possibilité de débuter une nouvelle partie.
 Commencer par créer 2 fichiers: index.html et main.js.
 */
 
+
+
+
+
 // Coder ici
 
 let solution = Math.floor(Math.random() * 100) + 1;
+let reponse = parseInt(prompt("Veuillez entre une proposition"));
 
-let reponse = parseInt(prompt("Veuillez entrez un nombre entre 0 et 100"))
-for (let reponse = 0; reponse < 7; index++) {
-    if (reponse == solution){
-        console.log("Bravo tu as la bonne réponse")
-    } else if(reponse>solution){
-        console.log("Votre choix est trop grand")
-    } else if (reponse < solution){
-        console.log("Votre choix est trop petit")
-    } else{
-        console.log("Votre choix est pas bon ")
-    }
-}
-
-
-
-
-
-let nombre = Number(prompt("Entrez un nombre :"));
-if(nombre>0){
-    console.log(nombre+ " est positif ");
-}else{
-    console.log(nombre+ " est négatif ou nul")
-}
-
-
-
-let outil1 = "fourchette";
-let outil2 = "couteau";
-
-if ((outil1 === "fourchette") && (outil2 === "couteau")){
-    console.log("Je mange un plat de tajine");
-}
-
-
-if ((outil1 === "fourchette") && (outil2 === "cuillere")) {
-    console.log("Je mange mange mon crumble au pomme");
-}
-
-
+for (let i = 1; i<=7 ; i++){
  
+
+}

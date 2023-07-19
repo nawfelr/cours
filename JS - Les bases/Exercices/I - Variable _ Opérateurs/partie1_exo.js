@@ -7,11 +7,6 @@
 * Exo 1: Ecrivez un programme qui affiche votre nom, puis votre âge.
 */
 
-let prenom = prompt("Entrez votre prénom");
-let age = parseInt(prompt("Entrez vorez age"));
-alert ("Vous vous appeler "+ prenom);
-alert(" et vous avez " + age + " ans.");
-
 
 
 /* 
@@ -19,13 +14,6 @@ alert(" et vous avez " + age + " ans.");
 * Ecrivez un programme qui calcule et affiche le résultat de l'addition, 
 * de la soustraction, de la multiplication et de la division de 9 par 3.
 */
-let addition = 9+3;
-let soustraction = 9-3;
-let multiplication = 9*3;
-let division = 9/3;
-alert(" le résultat de l'addition de 9 par 3 est = " + addition + "le résultat de la soustraction de 9 par 3 est = "+ soustraction + ". Le réusltat de la multiplication de 9 par 3 est = " + multiplication + ". Le résultat de la division de 9 par 3 est = " + division + ".")
-
-
 
 
 /* 
@@ -35,11 +23,8 @@ alert(" le résultat de l'addition de 9 par 3 est = " + addition + "le résultat
 */
 
 console.log(4 + 5);
-// 9
 console.log("4 + 5");
-// (4 + 5)
 console.log("4" + "5");
-// 45
 
 /* 
 * Exo 4: 
@@ -47,37 +32,17 @@ console.log("4" + "5");
 * Vérifiez vos prévisions en l'exécutant.
 */
 
-var a = 2;
+let a = 2;
 a -= 1;
 a++;
-var b = 8;
+let b = 8;
 b += 2;
-var c = a + b * b;
-var d = a * b + b;
-var e = a * (b + b);
-var f = a * b / a;
-var g = b / a * a;
+let c = a + b * b;
+let d = a * b + b;
+let e = a * (b + b);
+let f = a * b / a;
+let g = b / a * a;
 console.log(a, b, c, d, e, f, g);
-
-// Résultats
-
-var a = 2;
-a = a - 1;
-a++;
-// a = 2
-var b = 8;
-b += 2;
-//  b= 10
-var c = a + b * b;
-// c = 102
-var d = a * b + b;
-// d = 30
-var e = a * (b + b);
-// e = 40
-var f = a * b / a;
-// f = 10
-var g = b / a * a;
-    // g = 10
 
 
 /* 
@@ -92,11 +57,10 @@ scientifique, Anders Celsius, propose une nouvelle graduation au thermomètre.
 La conversion entre les échelles est donnée par [°F] = [°C] x 9/5 + 32. 
 */
 
-var tempCel = 37.1;
+let tempCel = 37.1;
 
 // Ajoutez ici le code pour convertir tempCel en degrés Fahrenheit
-let tempFar = (tempCel *9/5)+32;
-alert ( "La température en degrés est : " + tempCel + " degres celcius. alors qu'en fahrenheit elle est de : " +tempFar+ " °F.");
+
 
 /* 
 * Exo 6: 
@@ -105,13 +69,10 @@ alert ( "La température en degrés est : " + tempCel + " degres celcius. alors 
 * Astuce : vous n'êtes pas limité(e) à l'utilisation de deux variables.
 */
 
-var nombre1 = 5;
-var nombre2 = 3;
+let nombre1 = 5;
+let nombre2 = 3;
 
 // Tapez votre code ici (sans rien modifier d'autre !)
-tmp = nombre1;
-nombre1 = nombre2;
-nombre2 = tmp;
 
 console.log(nombre1); // Doit afficher 3
 console.log(nombre2); // Doit afficher 5
