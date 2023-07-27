@@ -1,0 +1,33 @@
+
+
+p{
+    background:lightblue;
+    border: blue 2px solid;
+    border-radius: 20px;
+    font-size: 3em;
+    margin: 20px 500px;
+}
+
+h1{
+    margin: auto;
+    background: lightblue;
+    border-radius: 20px;
+    font-size: 6em;
+    border: solid blue 2px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+#btn{
+    margin: 20px 50px 50px 450px;
+}
+
+
+button{
+  margin-left: 60px;
+  padding: 20px;
+  background: lightblue;
+  font-size: 2em;
+  font-style: italic;
+}

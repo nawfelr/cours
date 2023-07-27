@@ -199,7 +199,7 @@ class Vehicule {
 }
 
 // Pour créer un objet à partir d'une classe on fait une instanciation de cette classe grâce à l'opérateur new
-// On crée ainsi l'objet voiture1 qui est une instance de la classe Vehicule
+// On crée ainsi l'objet voiture1 qui est une INSTANCE de la classe Vehicule
 
 let voiture1 = new Vehicule("Peugeot", 8000, "noir");
 

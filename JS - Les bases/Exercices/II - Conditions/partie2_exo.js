@@ -7,7 +7,25 @@
 */
 
 // code ici
+let day = prompt("Veuillez entre le nom d'un jour de la semaine");
 
+if (day === 'lundi') {
+    document.write("mardi");
+} else if (day === "mardi") {
+    document.write("mercredi");
+} else if (day === "mercredi") {
+    document.write("jeudi");
+} else if (day === 'jeudi') {
+    document.wtrite('vendredi');
+} else if (day === "vendredi") {
+    document.write('samedi')
+} else if (day === "samedi") {
+    document.write("dimanche")
+} else if (day === "dimanche") {
+    document.write("lundi")
+} else {
+    document.write("Vous avez entrez un nom de jour incorrecte ou mis des majuscule")
+}
 
 /* 
 * Exo 2:
@@ -19,11 +37,35 @@
     23h59m59s => 0h0m0s (minuit)
 */
 
-let heures = 14; // Faire varier cette variable entre 0 et 23
-let minutes = 17; // faire varier cette variable entre 0 et 59
-let secondes = 59; // faire varier cette variable entre 0 et 59
 
 // Ajoutez votre code ici
+
+
+let heures = parseInt(prompt('Veuillez entre une heure')); // Faire varier cette variable entre 0 et 23
+let minutes = parseInt(prompt('Veuillez entre un nombre de minutes')); // faire varier cette variable entre 0 et 59
+let secondes = parseInt(prompt('Veuillez entre un nombre de secondes')); // faire varier cette variable entre 0 et 59
+
+// Ajoutez votre code ici
+
+if ((heures > 0 && heures <= 23) && (minutes > 0 && minutes >= 59) && (secondes > 0 && minutes <= 59)) {
+    secondes++;
+    if (secondes == 60) {
+        secondes = 0;
+        minutes++;
+        if (minutes == 60) {
+            minutes = 0;
+            heures++;
+            if (heures == 24) {
+                heures = 0;
+            }
+        }
+    }
+}
+
+
+document.write('dans une seconde il sera : ' + heures + ' heures ' + minutes + ' mins et ' + secondes + 'secondes');
+
+
 
 /*
 * Exo 3 
@@ -41,3 +83,54 @@ let secondes = 59; // faire varier cette variable entre 0 et 59
 *   -> si 5: reçu
 *   -> + de 5: reçu avec mention
 */
+
+
+let moyenne = parseInt(prompt("Veuillez entrer votre moyenne"));
+
+// if (moyenne < 10) {
+//     document.write("recalé");
+// } else if ( (moyenne >=10) && (moyenne<12) ) {
+//     document.write("reçu");
+// } else if (moyenne > 12 ) {
+//     document.write("reçu avec mention");
+// } else {
+//     document.write("Veuillez entrer une moyenne correcte")
+// }
+
+
+
+
+switch (moyenne) {
+    case 1:
+        console.log("recalé");
+        break;
+    case 2:
+        console.log("recalé");
+        break;
+    case 3:
+        console.log("recalé");
+        break;
+    case 4:
+        console.log("recalé");
+        break;
+    case 5:
+        console.log("reçu");
+        break;
+    case 6:
+        console.log("reçu avec mention");
+        break;
+    case 7:
+        console.log("reçu avec mention");
+        break;
+    case 8:
+        console.log("reçu avec mention");
+        break;
+    case 9:
+        console.log("reçu avec mention");
+        break;
+    case 10:
+        console.log("reçu avec mention");
+        break;
+    default:
+        console.log("Veuillez entrer une moyenne correcte");
+}

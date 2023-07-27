@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jeu du + et du -</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Jeu du + et du -</h1>
+    <p>Devinez un nombre entre 1 et 100 en moins de 7 tentatives.</p>
+    <input type="number" id="userGuess" min="1" max="100">
+    <button id="guessButton">Proposer</button>
+    <p id="message"></p>
+
+    <script>
+        // Variables
+        let solution = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        // Fonction pour recommencer une nouvelle partie
+        function newGame() {
+            solution = Math.floor(Math.random() * 100) + 1;
+            attempts = 0;
+            $('#message').text('');
+            $('#userGuess').val('');
+        }
+
+        // Vérification du nombre saisi par le joueur
+        function checkGuess() {
+            const userGuess = parseInt($('#userGuess').val());
+            attempts++;
+
+            if (userGuess === solution) {
+                $('#message').text(`Bravo ! Vous avez deviné le nombre en ${attempts} tentatives.`);
+            } else if (attempts === 7) {
+                $('#message').text(`Dommage, vous avez épuisé vos 7 chances. Le nombre était ${solution}.`);
+            } else if (userGuess < solution) {
+                $('#message').text('Le nombre est plus grand.');
+            } else if (userGuess > solution) {
+                $('#message').text('Le nombre est plus petit.');
+            }
+        }
+
+        // Événement du bouton "Proposer"
+        $('#guessButton').on('click', function () {
+            checkGuess();
+        });
+
+        // Événement pour recommencer une nouvelle partie
+        $(document).on('keypress', function (event) {
+            if (event.which === 13) {
+                newGame();
+            }
+        });
+
+
+        $('#guessButton').on('click', function () {
+            checkGuess();
+
+            // Si le nombre est trouvé ou les 7 tentatives sont utilisées, on relance une nouvelle partie.
+            if ($('#message').text().includes('Bravo') || $('#message').text().includes('Dommage')) {
+                setTimeout(newGame, 2000); // Délai de 2 secondes avant de lancer une nouvelle partie.
+            }
+        });
+
+        // Événement pour recommencer une nouvelle partie
+        $(document).on('keypress', function (event) {
+            if (event.which === 13) {
+                newGame();
+            }
+        });
+
+    </script>
+</body>
+
+</html>

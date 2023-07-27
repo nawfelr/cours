@@ -64,18 +64,12 @@ multiple++;
 
 
 // Code ici
+let triangle="";
 
-
-
-
-
-let etoile = "";
-
-for ( let ligne = 1; ligne <=7; ligne ++){
-    console.log(etoile = etoile+"#");
+for (i=1;i<=7;i++){
+    triangle = triangle+"#";
+    console.log(triangle);
 }
-
-
 
 
 
@@ -94,14 +88,13 @@ for ( let ligne = 1; ligne <=7; ligne ++){
 
 
 */
-console.log("le manege demarre");
 
-for (let tourDeManege = 1; tourDeManege <=10; tourDeManege++){
-    console.log("c'est le tour numéro :" + tourDeManege)
+console.log("le manege démarre");
+
+for (i=1 ; i<=10; i++){
+    console.log(" c'est le tour numéro "+ i );
 }
-
 console.log("le manege s'arrete");
-
 
 
 
@@ -122,14 +115,15 @@ Accrochez-vous pour le réussir !
 */
 
 
-for (let i=1; i<=100;i++){
-    if ((i % 3 === 0) && (i % 5 === 0))
-        console.log("FizzBuzz");       
-    else if (i % 5 === 0 )
-        console.log ("buzz");
-    else if (i % 3 === 0)
+
+for (let i = 1; i <= 100; i++) {
+    if ((i % 5 === 0) && (i % 3 === 0)) {
+        console.log("fizzbuzz");
+    } else if (i % 5 == 0) {
+        console.log("buzz");
+    } else if (i % 3 == 0) {
         console.log("fizz");
-     else
+    } else {
         console.log(i);
-     
+    }
 }

@@ -6,7 +6,7 @@ Objectif: Ecrire un programme qui fait deviner un nombre entre 1 et 100.
 Le jeu choisit aléatoirement un nombre entre 1 et 100, */
 
 
-    // Cette ligne génère aléatoirement un nombre entre 1 et 100
+// Cette ligne génère aléatoirement un nombre entre 1 et 100
 
 /*
 puis il met le joueur au défi de le deviner en 7 tentatives maximum.
@@ -29,9 +29,22 @@ Commencer par créer 2 fichiers: index.html et main.js.
 // Coder ici
 
 let solution = Math.floor(Math.random() * 100) + 1;
-let reponse = parseInt(prompt("Veuillez entre une proposition"));
 
-for (let i = 1; i<=7 ; i++){
- 
 
+for (let i; i <= 7; i++) {
+    reponse = parseInt(prompt("Veuillez entre une proposition"));
+    if (!isNaN(solution)) {
+        if (solution === reponse) {
+            console.log("BRAVO tu as trouvé la réponse");
+            i = 7;
+        } else {
+            if (solution > reponse) {
+                console.log("trop petit");
+            } else {
+                console.log("trop petit");
+            }
+        }
+    } else {
+        console.log("veuillez entrer un nombre correcte")
+    }
 }

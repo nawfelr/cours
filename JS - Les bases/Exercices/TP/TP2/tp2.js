@@ -19,3 +19,58 @@ Le programme propose les options suivantes :
 
 Remarque: la fonction .reload() n'est pas autorisée
 */
+
+
+let sujet = [ "Hajare","Imane","Jalala","Stephanie","Adrienne"];
+
+let verbe = [ " frappa"," brula", " molesta", " demonta (dans le sens bagarre)", " souleva"];
+
+let complement = [" Mickael."," Bachir.", " Guillaume.", " Ahmed.", " Nawfel."]
+
+
+function random() {
+    return Math.floor(Math.random() * sujet.length);
+}
+
+
+
+
+let sujetHomme = ["Guillaume", "Mickael", "Sebastien", "Adrien", "Bachir"];
+
+let verbeHomme = [" embrassa", " murmura a l'oreil de ", " caressa le bras de", " regarda d'un air amoureux", " envoya un lettre d'amour a "];
+
+let complementHomme = [" Jason.", " John.", " Franck.", " Erik.", " Ahmed."]
+
+
+let rsujetHomme 
+let rverbeHomme 
+let rcomplementHomme 
+
+
+function citaHomme() {
+    rsujetHomme = sujetHomme[random()];
+    rverbeHomme = verbeHomme[random()];
+    rcomplementHomme = complementHomme[random()];
+    document.getElementById("citation").innerHTML += '<p>' + rsujetHomme + rverbeHomme + rcomplementHomme + '</p>'
+   
+}
+let rsujet;
+let rverbe;
+let rcomplement;
+
+
+function citaFemme() {
+    rsujet = sujet[random()];
+    let rverbe = verbe[random()];
+    let rcomplement = complement[random()];
+document.getElementById("citation").innerHTML += '<p>' + rsujet + rverbe + rcomplement + '</p>'
+}
+
+
+document.getElementById("btn1").addEventListener("click", function () {
+   citaFemme();
+});
+
+document.getElementById("btn2").addEventListener("click", function () {
+    citaHomme();
+});

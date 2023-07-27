@@ -37,15 +37,14 @@ console.log("Tiens, un chat ! " + chien.nom + " aboie : " + chien.aboyer());
 // Ajoutez votre code ici
 
 let aurora = {
-    xp: function (){
-        return 0;
-    }
-    
+    nom: "Aurora",
+    xp: 0,
+    pv: 150,
+    force:25,
+
     decrire: function(){
-        return "Aurora a 150 points de vie";
+        return this.nom+ " a " + this.pv +" points de vie " + this.force+" en force et "+ this.xp +" points d'expérience";
     }
-
-
 }
 
 // "Aurora a 150 points de vie, 25 en force et 0 points d'expérience"
@@ -69,6 +68,27 @@ console.log(aurora.decrire());
 */
 
 // Ajoutez votre code ici
+
+class Chien {
+    constructor(arg1, arg2, arg3) {
+        this.nom = arg1;
+        this.race = arg2;
+        this.taille= arg3;
+    }
+
+    aboyer() {
+        if (this.taille > 50){
+            return "Grrr ! Grrr !";
+        }else {
+            return "Wouaf ! Wouaf !"
+        }
+        
+    }
+
+    decrire(){
+        return this.nom + " est un " + this.race + " mesurant " + this.taille+ " cm.";
+    }
+}
 
 let crockdur = new Chien("Crockdur", "mâtin de Naples", 75);
 // "Crockdur est un mâtin de Naples mesurant 75 cm"
@@ -98,54 +118,39 @@ console.log("Tiens, un chat ! " + milou.nom + " aboie : " + milou.aboyer());
 
 // Ajoutez votre code ici
 
+class Personnage {
+    constructor(arg1, arg2, arg3) {
+        this.nom = arg1;
+        this.pv = arg2;
+        this.force = arg3;
+        this.xp = 0;
+        this.po = 10;
+        this.cle = 1;
+    }
+
+    decrire() {
+        return this.nom + " a " + this.pv + " points de vie, "+  this.force +" en force et " + this.xp + " points d'expérience," + this.po + " pièces d'or et " + this.cle + " clé(s)";
+    }
+
+    attaquer(enemi) {
+        enemi.pv = enemi.pv - this.force;
+        
+}
+}
 
 
 
+// "Aurora a 150 points de vie, 25 en force et 0 points d'expérience, 10 pièces d'or et 1 clé(s)"
+let aurora = new Personnage("Aurora", 150, 25);
 
+console.log(aurora.decrire());
 
+let monstre = new Personnage("ZogZog", 20, 10);
+monstre.attaquer(aurora);
+aurora.attaquer(monstre); // Le monstre est tué
 
-
-
-
-
-
-
-
-
-
-
-
-// // "Aurora a 150 points de vie, 25 en force et 0 points d'expérience, 10 pièces d'or et 1 clé(s)"
-// let aurora = new Personnage("Aurora", 150, 25);
-
-// console.log(aurora.decrire());
-
-// let monstre = new Personnage("ZogZog", 20, 10);
-// monstre.attaquer(aurora);
-// aurora.attaquer(monstre); // Le monstre est tué
-
-// // "Aurora a 140 points de vie, 25 en force et 10 points d'expérience, 20 pièces d'or et 2 clé(s)"
-// console.log(aurora.decrire());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// "Aurora a 140 points de vie, 25 en force et 10 points d'expérience, 20 pièces d'or et 2 clé(s)"
+console.log(aurora.decrire());
 
 
 

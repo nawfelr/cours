@@ -10,12 +10,12 @@ var solution = Math.floor (Math.random()*100)+1;
 
 console.log("(la solution est " + solution + ")"); 
 
-for (var i = 1; i <= 6; i++) {
+for (let i = 1; i <= 7; i++) {
     nbJoueur = parseInt(prompt("Le but du jeu est simple. Je pense à un nombre entre 0 et 100. A ton avis, quel est ce nombre ? Notes le dans la zone ci-dessous, tu as 6 essais."));
     if (!isNaN(nbJoueur)) {
         if (solution === nbJoueur) {
             alert("Bravo vous avez trouvé !");
-            i = 6;
+            i = 7;
         } else {
             if (solution < nbJoueur) {
                 alert("Le nombre est plus petit, essai " + i + " sur 6");
@@ -27,6 +27,8 @@ for (var i = 1; i <= 6; i++) {
         alert("Vous n'avez pas saisi un nombre !");
     }
 }
+
+
 
 
 

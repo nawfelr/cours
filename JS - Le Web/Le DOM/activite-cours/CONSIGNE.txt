@@ -1,0 +1,81 @@
+// ====== ACTIVITÉ COURS =====
+
+-> Activité de groupe (par 2)
+
+=> PARTIE 1
+
+- Dessiner l'arbre du DOM de la page activite-cours.html (voir exemple: image-DOM)
+- Utilise un carré pour représenter les éléments HTML, comme <body> ou <p>. 
+- Utilise un rond pour representer le contenu textuel de la page. 
+(Les éléments contenant du texte peuvent seulement etre représenter par "#text")
+
+
+=> PARTIE 2
+Faites des recherches sur les sélecteurs JS
+- Faites une liste des principaux sélecteurs JS (il y en a 5 ! )
+- Ecrivez pour chacun d'eux leur fonction
+
+
+
+
+getElementById(), sélection par attribut HTML ID.
+
+Il permet de recuper un id sur la page HTML (attention l'id ne peut etre attribuer qu'une seule fois).
+Une fois l'id récuperer on peut peut le modifier en attribuant sa valeur à une variable.
+
+
+
+
+getElementsByTagName(), sélection par attribut HTML NAME.
+
+
+Il permet de recuperer les balises que l'on aura selectionner entre parantheses et cela que ce soit dans tous le document HTML avec : document.getElementByTagName() ou dans un element donner avec element.getElementBytagName.
+
+
+
+getElementsByName(), sélection par nom de balise HTML
+
+
+
+Il permet de recuperer une ou des balises par leur valeur name et cela que ce soit dans tous le document HTML avec : document.getElementByName() ou dans un element donner avec element.getElementByName.
+
+
+
+
+getElementsByClassName(), sélecteur par identifiant présent dans attribut HTML CLASS.
+
+Il permet de récuperer un element par le nom d'une class CSS.
+
+
+<div class="bjr" > </div>
+<div class="au-revoir" > </div>
+
+là on récupere que la class="brj".
+
+
+
+
+
+
+querySelector() et querySelectorAll(), sélecteurs par sélecteurs CSS.
+
+
+Cette methode permet de selectionner les balises tout comme en CSS.
+
+
+
+
+
+
+
+
+
+=> PARTIE 3
+Compléter le code dans activite-cours.js
+Faites des recherches pour compléter vos connaissances
+
+
+NOTE : Un petit challenge, ça vous dit ? :-)
+
+Faites valider chaque étape avant de continuer la suivante afin 
+que ton équipe remporte la manche !
