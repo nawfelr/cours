@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+
+    <!-- Lien bootstrap CSS et JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- Lien CDNJS pour l'icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Lien CSS perso -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/background.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/background.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="menuHaut">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon"><i class="fa-solid fa-bars" style="color: #9d9b9b;"></i></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="clear"></div>
+
+
+            <div class="collapse list" id="navbarToggleExternalContent">
+                <ul class="p-2">
+                    <li><a class="text">Collapsed content</a></li>
+                    <li><a class="text">Collapsed content</a></li>
+                    <li><a class="text">Collapsed content</a></li>
+                    <li><a class="text">Collapsed content</a></li>
+                    <li><a class="text">Collapsed content</a></li>
+                    <li><a class="text">Collapsed content</a></li>
+                </ul>
+            </div>
+
+            <div class="titreHaut">
+                <h1>Bienvenue à bord</h1>
+                <h4>Locations voitures 24h/24 et 7j/7</h4>
+            </div>
+
+        </div>
+        <div class="container" >
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Adresse de départ
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                        <input id="date" type="date" value="2017-06-01" />
+                        <input id="date" type="date" value="2017-06-01" />
+
+                    </div>
+                    
+                    <button type="button" class="btn"> Valider ma recherche</button>
+                </div>
+            </nav>
+        </div>
+
+
+
+    </header>
+
+
+
+    <!-- Script JS perso si besoin-->
+    <!-- <script src="assets/js/script.js"></script> -->
+</body>
+
+</html>

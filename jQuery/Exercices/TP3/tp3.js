@@ -2,7 +2,7 @@ $(document).ready(function () {
     var pauseInterval = false;
 
     // set an interval for the slide to run on
-    var interval = window.setInterval(rotateSlides, 5000) // Duration until slide changes (3sec)
+    var interval = window.setInterval(rotateSlides, 15000) // Duration until slide changes (15sec)
 
     function rotateSlides() {
         // Get the first slide and store it
