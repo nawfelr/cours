@@ -1,0 +1,26 @@
+<span>{{ title }} app is running!</span> <br>
+<span>{{ hello }} </span> <br> <br>
+
+<button type="button" class="btn btn-success">Success</button>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Liste</h2>
+
+      <ul class="list-group">
+        <app-mon-premier-component *ngFor ="let element of presenceTab"
+                                    [persoName]="element.name"
+                                     [persoStatus]="element.status"></app-mon-premier-component>
+
+
+      </ul>
+      <input type="checkbox" [checked]="isAuth" (click)="onClique()"> Utilisateur connecté
+    </div>
+  </div>
+</div>
+
+
+
+
+
