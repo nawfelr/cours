@@ -1,38 +1,36 @@
-import { Component } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import {DataService} from './service/data.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'mon-projet-angular';
-  hello = 'hello world';
-  isAuth = true;
-  onClique(){
-    alert('Cliqué !');
+export class AppComponent implements OnInit {
+  title: string = 'Titre';
+  constructor() { }
+  ngOnInit() {
+    ;
+
   }
-  persoOne ='Adrien';
-  persoTwo ='Guillaume';
-  persoThree = 'Stephane';
-  Present ='Présent';
-  Absent ='Absent';
 
-  presenceTab=[
-    {
-      name :"Emmanuelle",
-      status: "Présent"
-    },
-      {
-      name :"Robin",
-      status: "Absent"
-    },
-      {
-      name :"Dominique",
-      status: "Présent"
-    }
 
-  ]
+
+
+  // title = 'mon-projet-angular';
+  // hello = 'hello world';
+  // isAuth = true;
+  // onClique(){
+  //   alert('Cliqué !');
+  // }
+  // persoOne ='Adrien';
+  // persoTwo ='Guillaume';
+  // persoThree = 'Stephane';
+  // Present ='Présent';
+  // Absent ='Absent';
+  // presenceTab: any[];
+
+
+
 
 }

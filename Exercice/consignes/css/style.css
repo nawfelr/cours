@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:ital,wght@1,300&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@100&family=Shadows+Into+Light&display=swap');
+
+
+
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+/* ----------------------------------------- HEADER -------------------------------------------- */
+header {
+    width: 100%;
+    height: 1050px;
+}
+
+.image {
+
+    z-index: 1;
+    width: 100%;
+    height: 1050px;
+}
+
+.image2 {
+    z-index: 2;
+    margin: 0 auto;
+    width: 50%;
+    height: 860px;
+    position: relative;
+    bottom: 950px;
+    left: 490px;
+}
+
+header nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 4;
+
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 80px;
+
+}
+
+header nav ul li {
+    text-align: center;
+    vertical-align: middle;
+    height: 80px;
+    line-height: 80px;
+    width: 170px;
+
+}
+
+header nav ul li:hover {
+    border: 1px solid grey;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.image3 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    bottom: 850px;
+    left: 650px;
+}
+
+/* ----------------------------------------- CONTAINER -------------------------------------------- */
+
+#container {
+    margin: 20px auto 0;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+
+.promo h2 {
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(24, 24, 24);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.image img {
+
+    width: 60%;
+    height: 40%;
+    transition: all .5s;
+    margin: 30px auto;
+
+}
+
+.image img:hover {
+
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+
+.texte {
+    margin: 20px auto;
+    font-weight: 300;
+}
+
+.texte p {
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.texte p:last-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

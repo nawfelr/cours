@@ -1,4 +1,4 @@
-<li [ngClass] ="{
+<!-- <li [ngClass] ="{
   'list-group-item': true,
   'list-group-item-success':persoStatus === 'Présent',
   'list-group-item-danger':persoStatus === 'Absent'
@@ -11,4 +11,18 @@
   <p>Etudiant : {{ persoName }} -- statut : Absent ou présent</p>
   <input type="text" class="form-control" [(ngModel)]="persoName">;
 </li>
+ -->
 
+ <h2> Liste de présence</h2>
+
+
+
+
+ <li class="list-group-item" *ngFor="let student of presenceTab">
+  <p> Etudiant : {{persoName}} -- Statut : {{student.status}} </p>
+
+<a routerLink="/presences/{{ student.id}}">
+    Voir fiche : {{student.id}} - {{student.name}}
+  </a>
+<hr>
+ </li>

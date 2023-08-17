@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-mon-premier-component',
@@ -9,22 +10,26 @@ export class MonPremierComponentComponent implements OnInit {
   @Input() persoName: string;
   @Input() persoStatus: string;
 
-  getColor(): string {
-    if (this.persoStatus === 'Présent') {
-      return "green";
-    } else if (this.persoStatus === "Absent") {
-      return "red";
-    } else {
-      return "green";
-    }
-  }
+  presenceTab: any[];
 
-  constructor() { }
+  constructor(private dataService: DataService) {
+    this.presenceTab = this.dataService.presenceTab;
+   }
+
   ngOnInit() {
 
   }
 
-
-
-
+getStatus() {
+  return this.persoStatus
 }
+  // getColor(): string {
+  //   if (this.persoStatus === 'Présent') {
+  //     return "green";
+  //   } else if (this.persoStatus === "Absent") {
+  //     return "red";
+  //   } else {
+  //     return "green";
+  //   }
+  // }
+ }

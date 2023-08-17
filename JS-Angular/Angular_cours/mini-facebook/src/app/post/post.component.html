@@ -1,6 +1,8 @@
 <li>
   <h4>{{ h4 }}</h4>
   <p>{{ contenu }}</p>
-  <button id='like'>J’aime</button>
-  <button id='nolike'>Je n'aime pas</button>
+  <button id='like' (click)="toggleLike()" [ngClass]="{ 'none': likeVisible }">J’aime</button>
+  <button id='nolike'(click)="toggleLike()" [ngClass]="{ 'none': !likeVisible }">Je n'aime pas</button>
 </li>
+ <textarea name="" id="" cols="30" rows="2" [(ngModel)]="com"></textarea>
+  <p> <strong> Commentaire: {{ com }}</strong>  </p>

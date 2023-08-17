@@ -1,0 +1,33 @@
+.image{
+background-image: url(../assets/images/home.jpeg) ;
+// background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100%;
+width: 100%;
+}
+
+.jumb {
+
+position: relative;
+top: 450px;
+
+}
+
+.jumb p svg{
+height: 75px;
+
+}
+
+.jumb p{
+  text-align: center;
+  color: white;
+}
+
+.jumb h2{
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+

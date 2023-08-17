@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MonPremierComponentComponent } from './mon-premier-component/mon-premier-component.component';
 import {FormsModule} from '@angular/forms';
+import { DataService } from './service/data.service';
+import { EleveDetailComponent } from './eleve-detail/eleve-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MonPremierComponentComponent
+    MonPremierComponentComponent,
+    EleveDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,9 @@ import {FormsModule} from '@angular/forms';
     FormsModule,
 
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

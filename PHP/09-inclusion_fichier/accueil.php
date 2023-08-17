@@ -1,0 +1,12 @@
+<?php
+require 'include/nav.php';
+?>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, voluptas.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis distinctio modi maiores iusto impedit expedita itaque accusamus hic placeat enim, nesciunt fuga natus aspernatur quisquam vero vitae illo, possimus dolores eaque eligendi ab? Praesentium impedit, enim perferendis veritatis consequuntur alias ratione error deserunt mollitia quam illum rerum nesciunt expedita tenetur incidunt quos accusamus sint architecto. Ipsam qui nisi dolor. Qui illum earum repellat repellendus quidem omnis eos hic quasi iure ratione eius reiciendis maxime eveniet consectetur impedit, labore temporibus sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio suscipit neque fuga ipsa praesentium repellendus quae perspiciatis recusandae, aliquid perferendis magnam! Repellat modi rem minima, alias omnis ex explicabo numquam ab optio laborum delectus quod inventore sapiente, dolorem illo labore veritatis eligendi, sint error voluptatum? Odit amet voluptate nulla animi ipsum ducimus fugiat reprehenderit rem impedit, labore dolore. Provident culpa dolore officiis! Assumenda necessitatibus cumque accusamus ducimus numquam nihil architecto facere autem. Labore, provident? Veritatis, ducimus corporis, necessitatibus nihil voluptates eos deserunt culpa quaerat ex exercitationem assumenda sapiente at ipsum. Obcaecati maxime dolores neque. Pariatur nihil delectus nemo at nulla. Placeat maiores excepturi minus aperiam obcaecati incidunt magnam dolorem architecto, minima omnis voluptatibus, quod veniam rem totam quidem. Error, consequatur! Tenetur, eum sint! Necessitatibus natus error, nobis ut, inventore accusantium maxime aperiam eveniet ea quis excepturi, ratione neque. Similique omnis repellendus voluptatum, assumenda velit, rem soluta, quos dolore consequuntur laboriosam aut? Amet doloremque repellendus dicta sapiente minus atque deserunt aliquam iure, rem ipsum. Soluta similique voluptates quam distinctio nam cum, possimus libero eveniet quidem voluptatum perspiciatis dignissimos? Quidem, reiciendis beatae. Aperiam iusto, laboriosam ex natus odit cum aut possimus provident officiis omnis similique atque id accusamus et voluptatem hic?
+</p>
+
+
+<?php
+require 'include/footer.php';
+?>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ionic</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+
+<body>
+
+    <ion-app>
+        <!-- MON MENU -->
+
+        <ion-menu content-id="main-content">
+            <ion-header>
+                <ion-toolbar>
+                    <ion-title>Menu</ion-title>
+                </ion-toolbar>
+            </ion-header>
+
+            <ion-content class="ion-padding">
+                <ion-item>
+                    <ion-icon name="home-outline" slot="start"></ion-icon>
+                    <ion-label> Default Icon </ion-label>
+                </ion-item>
+
+                <ion-item>
+                    <ion-icon name="leaf-outline" slot="start"></ion-icon></ion-icon>
+                    <ion-label> Default Icon </ion-label>
+                </ion-item>
+
+                <ion-item>
+                    <ion-icon name="add-circle-outline" slot="start"></ion-icon>
+                    <ion-label> Default Icon </ion-label>
+                </ion-item>
+
+            </ion-content>
+        </ion-menu>
+        
+        <div >
+            <ion-header>
+                <ion-toolbar color="primary">
+                    <ion-buttons slot="start">
+                        <ion-menu-button></ion-menu-button>
+                    </ion-buttons>
+                    <ion-title>InstantGram <i class="fa-solid fa-camera" style="color: #cfcfcf;"></i></ion-title>
+                </ion-toolbar>
+                <p style="font-size: 1.5em; padding: 15px 5px;"> <strong>Bienvenue</strong> </p>
+                <!-- MA CARD -->
+
+            </ion-header>
+
+ <ion-card>
+            <img alt="Silhouette of mountains" src="../projet 1/assets/img/plage.jpeg" />
+            <ion-card-header>
+                <ion-card-title>Miami, US</ion-card-title>
+                <ion-card-subtitle>Destination Floride</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reiciendis unde vitae?<ion-content
+                    class="ion-padding" class="ion-margin-top-5">
+
+            </ion-card-content>
+        </div>
+
+
+       
+            
+
+        </ion-card>
+
+
+        <ion-footer>
+            <ion-toolbar>
+                <h1>Content</h1>
+                <ion-title>Footer</ion-title>
+            </ion-toolbar>
+        </ion-footer>
+
+
+
+
+    </ion-app>
+
+
+
+
+</body>
+
+</html>

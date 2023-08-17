@@ -1,4 +1,4 @@
-<span>{{ title }} app is running!</span> <br>
+<!-- <span>{{ title }} app is running!</span> <br>
 <span>{{ hello }} </span> <br> <br>
 
 <button type="button" class="btn btn-success">Success</button>
@@ -18,9 +18,17 @@
       <input type="checkbox" [checked]="isAuth" (click)="onClique()"> Utilisateur connecté
     </div>
   </div>
-</div>
+</div> -->
 
 
 
 
 
+<h1>{{title}} </h1>
+
+<nav class="nav">
+  <a class="lien" routerLink="/">Accueil</a>
+  <a class="lien" routerLink="/presences"> Liste</a>
+</nav>
+
+<router-outlet></router-outlet>
