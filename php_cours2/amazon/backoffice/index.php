@@ -13,9 +13,57 @@ if ($_SESSION['user_statut'] == 0) {
 require_once('lib/db.php'); //fichier qui nous donne accés à la BDD
 require_once('lib/select_product.php'); // requete SQL de la table produit
 
+// print_r($_SESSION);
 
 
 ?>
+
+<style>
+    #green {
+        background-color: #44c767;
+        border-radius: 28px;
+        border: 1px solid #18ab29;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 17px;
+
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #2f6627;
+        width: 86px;
+        height: 40px;
+
+    }
+
+    #green:hover {
+        background-color: #5cbf2a;
+    }
+
+    #red {
+        background-color: #e30410;
+        border-radius: 28px;
+        border: 1px solid #ab1919;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 17px;
+
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #662837;
+        width: 80px;
+        height: 40px;
+    }
+
+    #red:hover {
+        background-color: #bd2a2a;
+    }
+
+    .bouton {
+        margin: 0 auto;
+    }
+</style>
 
 
 
@@ -110,7 +158,7 @@ require_once('lib/select_product.php'); // requete SQL de la table produit
                     <i class="fas fa-fw fa-table"></i>
                     <span>Hompage</span></a>
             </li>
-            <!-- Créations d'in produit -->
+            <!-- Créations d'un produit -->
 
             <li class="nav-item">
                 <a class="nav-link" href="./form/form_produit.php">
@@ -294,11 +342,11 @@ require_once('lib/select_product.php'); // requete SQL de la table produit
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname']; ?></span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                <img class="img-profil rounded-circle" style="width:50px;height:50px;" src="./image/<?php echo $_SESSION['image'] ?>">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="./form/profil.php?id_user=<?php echo $_SESSION['id_user']; ?>">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -336,7 +384,7 @@ require_once('lib/select_product.php'); // requete SQL de la table produit
                         <?php foreach ($product as $i) { ?>
 
                             <div class="col-xl-3 col-md-6 mb-4">
-                                <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card border-left-success shadow h-100 py-2 ">
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
                                             <div class="col mr-2">
@@ -346,11 +394,32 @@ require_once('lib/select_product.php'); // requete SQL de la table produit
                                                 </div>
                                             </div>
                                             <div class="col-auto">
-                                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                                <?php if ($i['show'] == 1) { ?>
+                                                    <a href="./form/update_show.php?id_product=<?php echo $i['id_produit']; ?>"><i class="fas fa-euro-sign fa-2x text-blue-300" style="color:green!important;"></i></a>
+
+                                                <?php } elseif ($i['show'] == 0) { ?>
+                                                    <a href="./form/update_show.php?id_product=<?php echo $i['id_produit']; ?>"><i class="fas fa-euro-sign fa-2x text-gray-300"></i></a>
+                                                <?php } ?>
                                             </div>
+
                                             <!-- METTRE LES NOUVEAUX PRODUITS ICI -->
                                         </div>
                                     </div>
+                                    <div class="bouton" style="margin: 40;">
+                                        <!-- Boutton Modifier -->
+
+                                        <a href="./form/modif_form_produit.php?id_product=<?php echo $i['id_produit']; ?>" style="width:150px;" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"> Modifier ce produit</a>
+
+
+
+                                        <!-- Boutton supprimer -->
+
+                                        <a href="./form/delet_produit.php?id_product=<?php echo $i['id_produit']; ?>" style="width:150px;" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"> Supprimer ce produit</a>
+
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         <?php
@@ -397,7 +466,7 @@ require_once('lib/select_product.php'); // requete SQL de la table produit
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                            <i class="fas fa-euro-sign fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
