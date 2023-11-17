@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+
+/* Code du login de mon dashboard ( Bonjour et l'image ) */
+header{
+    background: #121212;
+}
+
+.head h2{
+    color:#f33f3f;
+    position: absolute;
+    top:40px;
+    left: 25px;
+}
+
+.head span{
+    color: white;
+}
+
+.login {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    
+}
+.login h4 {
+ font-weight: bold;
+ align-self: center;
+ margin-right: 20px;
+ color: white;
+}
+
+.login img{
+width: 60px;
+height: 60px;
+border-radius: 50px;
+}
+
+/* Code du body de mon dashboard */
+
+.dash{
+    display: flex; 
+}
+
+/* Code de la side bar de mon dashboard */
+
+.sidebar{
+    background: #f33f3f;
+    width: 250px;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+nav ul li.sousMenu:hover ul.niveau2 {
+    display: block;
+
+}
+
+/* Code du tableau de mon dashboard */
+
+.commande{
+   margin: 80px auto;
+   
+}
+
+.commande h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+table{
+    width: 900px;
+border-collapse: collapse;
+}
+
+th{
+    background: #f33f3f;
+    padding: 20px;
+}
+
+td{
+    padding: 20px;
+  background: #121212;
+  color: white;
+  border-spacing: 1px;
+  text-align: center;
+}
+

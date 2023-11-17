@@ -67,32 +67,77 @@ switch (jour) {
     23h59m59s => 0h0m0s (minuit)
 */
 
-let heures = 14; // Faire varier cette variable entre 0 et 23
-let minutes = 17; // faire varier cette variable entre 0 et 59
-let secondes = 59; // faire varier cette variable entre 0 et 59
 
+let heure = prompt('Veuillez entrez une heure entre 0 et 23');
+let minute = prompt('Veuillez entrez une minute entre 0 et 59');
+let seconde = prompt('Veuillez entrez une seconde entre 0 et 59');
 
-// On teste tous les cas d'erreur
-if ((heures >= 0) && (heures <= 23) && (minutes >= 0) && (minutes <= 59) &&
-    (secondes >= 0) && (secondes <= 59)) {
-    secondes++; // On incrémente les secondes
-    if (secondes === 60) {
-        // Il faut mettre les secondes à 0 et passer à la minute suivante
-        secondes = 0;
-        minutes++;
-        if (minutes === 60) {
-            // Il faut mettre les minutes à 0 et passer à l'heure suivante
-            minutes = 0;
-            heures++;
-            if (heures === 24) { // L'heure suivante est minuit
-                heures = 0;
-            }
-        }
+if ((heure >= 0 && heure <= 23) && (minute >= 0 && minute <= 59) && (seconde >= 0 && seconde <= 59)){
+    seconde++;
+    if (seconde == 60){
+        seconde =0;
+        minute++;
+      if (minute == 60){
+        minute =0;
+        heure++;
+     if ( heure == 24){
+        heure = 0;
     }
-    console.log("Dans une seconde, il sera " + heures + " heures, " + minutes + " minutes et " + secondes + " secondes");
-} else {
-    console.log("Erreur : heure incorrecte !");
 }
+} 
+    console.log("Dans une seconde, il sera " + heure + " heures, " + minute + " minutes et " + seconde + " secondes");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let heures = 14; // Faire varier cette variable entre 0 et 23
+// let minutes = 17; // faire varier cette variable entre 0 et 59
+// let secondes = 59; // faire varier cette variable entre 0 et 59
+
+
+// // On teste tous les cas d'erreur
+// if ((heures >= 0) && (heures <= 23) && (minutes >= 0) && (minutes <= 59) &&
+//     (secondes >= 0) && (secondes <= 59)) {
+//     secondes++; // On incrémente les secondes
+//     if (secondes === 60) {
+//         // Il faut mettre les secondes à 0 et passer à la minute suivante
+//         secondes = 0;
+//         minutes++;
+//         if (minutes === 60) {
+//             // Il faut mettre les minutes à 0 et passer à l'heure suivante
+//             minutes = 0;
+//             heures++;
+//             if (heures === 24) { // L'heure suivante est minuit
+//                 heures = 0;
+//             }
+//         }
+//     }
+//     console.log("Dans une seconde, il sera " + heures + " heures, " + minutes + " minutes et " + secondes + " secondes");
+// } else {
+//     console.log("Erreur : heure incorrecte !");
+// }
 
 /*
 * Exo 3 - les conditions

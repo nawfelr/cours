@@ -12,15 +12,38 @@
 
 
 
+
+let n = 2;
+
+let nb= prompt('Veuillez entrer un nombre');
+
+for (let i = 2; i <= 10; i++) {
+    let result = nb * i;
+    
+    console.log(nb +'*'+ i +'='+ result);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Code ici
 
-let nombre = parseInt(prompt("Veuillez entrer un nombre"));
-let multiple = 2;
+// let nombre = parseInt(prompt("Veuillez entrer un nombre"));
+// let multiple = 2;
 
-while (multiple<=10){
-console.log ( nombre + "x" + multiple + " = " + nombre * multiple);
-multiple++;
-}
+// while (multiple<=10){
+// console.log ( nombre + "x" + multiple + " = " + nombre * multiple);
+// multiple++;
+// }
 
 
 // let nombre = parseInt(prompt("Veuillez entrer un nombre"))
@@ -62,12 +85,10 @@ multiple++;
 */
 
 
+let triangle = '';
 
-// Code ici
-let triangle="";
-
-for (i=1;i<=7;i++){
-    triangle = triangle+"#";
+for (let i = 0; i < 7; i++) {
+    triangle = triangle+'#';
     console.log(triangle);
 }
 
@@ -75,7 +96,24 @@ for (i=1;i<=7;i++){
 
 
 
-/* 
+
+
+
+
+
+// // Code ici
+// let triangle="";
+
+// for (i=1;i<=7;i++){
+//     triangle = triangle+"#";
+//     console.log(triangle);
+// }
+
+
+
+
+
+// /* 
 * EXERCICE 3: Complétez ce programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour :
 
     Le manège démarre

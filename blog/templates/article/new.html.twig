@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Article{% endblock %}
+
+ 
+{% block body %}
+
+
+{% if app.user %}
+
+    <h1>Create new Article</h1>
+    {{ include('article/_form.html.twig') }}
+
+    <a href="{{ path('app_article_index') }}">back to list</a>
+  
+      {% else %}
+
+    <h1 style="color:red;">Veuillez vous connecter pour remplir le formulaire</h1>
+
+   {% endif %}
+{% endblock %}
+

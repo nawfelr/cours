@@ -23,28 +23,28 @@ Commencer par créer 2 fichiers: index.html et main.js.
 */
 
 
-
-
-
 // Coder ici
+
 
 let solution = Math.floor(Math.random() * 100) + 1;
 
-
-for (let i; i <= 7; i++) {
-    reponse = parseInt(prompt("Veuillez entre une proposition"));
-    if (!isNaN(solution)) {
-        if (solution === reponse) {
-            console.log("BRAVO tu as trouvé la réponse");
-            i = 7;
-        } else {
-            if (solution > reponse) {
-                console.log("trop petit");
-            } else {
-                console.log("trop petit");
-            }
-        }
+console.log("(la solution est " + solution + ")");
+for (let i = 0; i <= 7; i++) {
+    nbJoueur = parseInt( prompt('Veuillez entrez un nombre entre 0 et 100'));
+    if(!isNaN(nbJoueur)){
+        
+        if (solution === nbJoueur ){
+         alert('bravo vous avez trouvé le bon nombre');
+         i = 7;
     } else {
-        console.log("veuillez entrer un nombre correcte")
+            if (solution < nbJoueur ){
+          alert('C est plus petit');
+       } else {
+          alert('C est plus grand');
+       }
+     
+    }
+    } else {
+        alert("Vous n'avez pas saisi un nombre !");
     }
 }

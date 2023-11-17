@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {% block stylesheets %}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        {% endblock %}
+
+        {% block javascripts %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block header %}
+<nav class="navbar navbar-expand-lg bg-body-pink">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ path('app_home') }}">Mon e-commerce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex" style="justify-content:space-between;" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ path('app_home') }}">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path('app_product_index') }}">Liste des produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path('app_contact') }}">contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path('app_commentaires_index') }}">Commentaires</a>
+        </li>
+        
+      </ul> 
+
+      {% if app.user == null %}
+
+      <ul class="navbar-nav d-flex" >
+      <a class="nav-link" href="{{ path('app_register') }}"><button type="button" class="btn btn-secondary">S'inscrire</button></a>
+      <a class="nav-link" href="{{ path('app_login') }}"><button type="button" class="btn btn-secondary">Se connecter</button></a>
+      </ul>
+      {% endif %}
+
+
+       {% if app.user %}
+            <ul class="navbar-nav d-flex" >
+                <li class="nav-item" >
+                    <p class="nav-link" style="margin-bottom:0!important;padding-top:17px!important;">Bonjour </p>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_logout') }}">
+                      <button type="button" class="btn btn-secondary">Se deconnecter</button>
+                    </a>
+                </li>
+            </ul>
+          {% endif %}
+      
+    </div>
+  </div>
+</nav>
+
+        
+        {% endblock %}
+
+ {# -----------------------------------FIN DU HEADER---------------------------------------------- #}
+
+  {# -----------------------------------DEBUT DU BODY---------------------------------------------- #}
+        {% block body %}{% endblock %}
+
+
+{# -----------------------------------FIN DU BODY---------------------------------------------- #}
+
+  {# -----------------------------------DEBUT DU FOOTER---------------------------------------------- #}
+        {% block footer %}
+        <footer class="footer mt-auto py-3 bg-body-tertiary">
+           <div class="container">
+<span class="text-body-secondary">
+	<a href="#">CGV</a>
+</span>
+<span class="text-body-secondary">
+	<a href="#">Condition Générale</a>
+</span>
+
+
+           </div>
+        </footer>
+        
+        {% endblock %}
+    </body>
+</html>

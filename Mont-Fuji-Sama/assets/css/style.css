@@ -1,25 +1,597 @@
-header{
+/* ICI STYLE DE LA PAGE il permet de mettre a 0 les marges de l'entiereté de la page  */
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Barlow+Semi+Condensed:wght@300&display=swap');
+*{
     margin: 0;
     padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.navHeader{
-background-color: rgba(137, 138, 138, 0.7);
+/* ICI STYLE DE LA NAVBAR le but de ce code et d'aligner les éléments de la nav, de les espacés et de leur attribué la bonne taille. */
+
+.header{
+    /* J'utilise le display flex pour rendre les trois div contenue dans la div header flexible*/
+    display: flex; 
+    
+    /* J'utilise le flex-wrap pour aligner les trois div contenue dans la div header */
+    flex-wrap: wrap; 
+    
+    /* J'utilise le space between pour creer un espace entre les trois div contenue dans la div header */
+    justify-content:space-around; 
+    
+    /* J'utilise le flex-wrap pour centre verticalement les trois div contenue dans la div header */
+    align-items: center; 
+    
+    /* J'utilise l'align-items pour donner une marge interieur a ma div header */
+    padding: 10px; 
+
+    /* J'utilise le background color pour donner une couleur bleu ciel*/
+    background: rgb(3, 66, 129);
+
 }
+
+
+.header .logo img{
+    width: 175px;
+    height: 90px;
+    border-radius: 15px;
+}
+
+
+
+.titre h1 span {
+    color: white;
+}
+
 
 .navHeader ul{
+    /* J'utilise le display flex pour rendre les li de ma nav flexibles */
     display: flex;
+
+    /* J'utilise le flex-wrap pour aligner les li de ma nav */
+    flex-wrap: wrap;
+
+    /* J'utilise le space-around pour pour créer un espace autour des li de ma nav */
     justify-content: space-around;
-    list-style: none;
    
 }
 
-.navHeader ul li  {
-    text-align: center;
+.navHeader ul li {
+    /* J'utilise le list style none afin de retirer les puces de mes li*/
+    list-style: none; 
+    
+    /* ici le padding me permet de mettre une marge intérieur de 5 px autour de mes li ce qui me permet de les agrandir mais aussi de les espacer */
+    padding: 5px;
+   
+    /*Ici la margin right permet de créer un espace en plus entre chaque li*/
+    margin-right: 10px; 
+    
 }
 
-.navHeader ul li a{
-    text-decoration: none;
-    color:white;
+.navHeader ul li:last-child{
+    margin-left: 10px;
+}
+
+.navHeader ul li a {
+   text-decoration: none;
+   color:white;
+  
+   font-size: 20px;
+}
+
+.navHeader ul li a:hover {
+    color: rgb(157, 209, 249);
+    text-decoration: underline white 2px;
+}
+
+/* ICI STYLE DE LA PAGE D'ACCUEIL il permet de modifier la hauteur de la banniere avec l'image du mont fuji  */
+
+.banniere video{
+width: 100%;
+height: 500px;
+object-fit: cover;
+object-position: 50% 30%;
+}
+
+/* ICI STYLE DE LA PAGE D'ACCUEIL il permet de modifier la larger du container  */
+
+.container{
+   
+    margin: 10px auto;
+}
+
+.souvenirTitre h2{
     text-align: center;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.souvenirTitre hr{
+    height: 20px;
+    width: 30%;
+    margin: 0 auto;
+    background: rgb(3, 66, 129);
+    border-radius: 10px;
+}
+
+/* ICI STYLE DE LA PAGE D'ACCUEIL il permet de modifier la larger de la card  */
+.souvenirCard{
+margin: 35px auto;
+background: rgb(3, 66, 129);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+height: 500px;
+align-items: center;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 15px;
+    border-color: rgb(30, 146, 228) solid 5px;
+    padding-bottom: 15px;
+    filter: drop-shadow(0 0 0.75rem rgb(30, 146, 228));
+    text-align: center;
+    transition: all .5s;
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+
+
+
+.card:hover {
+        
+    transform: scale(1.2);
+}
+
+.card p, .card h3{
+    padding: 10px;
+}
+.card h3{
+    font-size: 23px;
+}
+.card p{
+    font-size: 20px;
+}
+
+.card button{
+    background: rgb(3, 66, 129); 
+   cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    
+}
+
+.card button a {
+    text-decoration: none;
+    color:white ;
+    font-size: 20px;
+}
+
+/* ---------------------------------------------DEBUT LIVRAISON ------------------------------------  */
+
+
+.souvenirLivraison h2{
+    text-align: center;
+        margin-bottom: 15px;
+        font-size: 50px;
+}
+
+
+.souvenirLivraison hr{
+    height: 20px;
+        width: 30%;
+        margin: 0 auto;
+        background: rgb(3, 66, 129);
+        border-radius: 10px;
+}
+
+
+/* --------------------------------------------- FIN LIVRAISON ------------------------------------  */
+
+
+
+
+
+
+
+/* --------------------------------------------- DEBUT ICONE LIVRAISON ------------------------------------  */
+
+
+
+
+.souvenirIcon{
+    margin: 35px auto;
+    background: rgb(3, 66, 129);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+flex-direction: column;
+    align-items: center;
+}
+
+.souvenirIcon .icon p {
+    margin-top: 10px;
+  text-align: center;
+  line-height: 25px;
+  color:white;
+  font-size: 20px;
+}
+.souvenirIcon .icon p span {
+   font-weight: bold;
+}
+
+
+/* --------------------------------------------- FIN ICONE LIVRAISON ------------------------------------  */
+.pillowCard{
+    margin: 35px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+     align-items: center;
+}
+
+
+
+
+
+
+/* --------------------------------------------- DEBUT DU FOOTER------------------------------------  */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    background: rgb(3, 66, 129);
+    color:white;
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+footer .logo img {
+   width: 260px;
+   height: 155px;
+}
+
+footer .presentation{
+    width: 500px;
+    line-height: 30px;
+    align-self: center;
+}
+footer .presentation a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .menuFooter ul li{
+   list-style: none;
+margin-bottom: 10px;
+}
+
+
+
+footer .menuFooter ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+footer .menuFooter ul li a:hover{
+color: rgb(157, 209, 249);
+text-decoration: underline;
+}
+
+
+footer h2{
+   margin-bottom: 10px;
+}
+
+/* -------------------------------------------- FIN DU FOOTER ----------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------- PAGE PRODUCT -------------------------------------------------------- */
+.baniere-product{
+    height: 500px;
+}
+
+.baniere-product img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position:  30%;
+}
+
+.baniere-product p{
+        color: white;
+        font-size: 30px;
+        position: relative;
+        bottom: 350px;
+        width: 65%;
+        text-align: center;
+        margin: auto;
+}
+
+
+.container-product{
+    width: 70%;
+    margin: 5px auto 20px;
+}
+
+.container-product h2{
+    text-align: center; 
+    font-size: 35px;
+}
+
+.container-product hr{
+    height: 20px;
+    width: 30%;
+    margin: 0 auto;
+    background: rgb(3, 66, 129);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.container-product img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------------------------------------- DEBUT CARD PRODUIT ------------------------------------------------ */
+
+.card-product{
+    width: 65%;
+    background: rgb(3, 66, 129);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 2px 3px 15px  black;
+    
+}
+
+.card-product .image-product{
+    width: 252px;
+    height: auto;
+  
+}
+.card-product .image-product img{
+  
+   border-top-left-radius:10px;
+   border-bottom-left-radius: 10px;
+}
+
+
+
+.description-product {
+    color: white;
+    padding: 25px;
+    width: 65%;
+}
+.description-product p {
+   margin: 30px auto;
+   text-align: center justify;
+   
+}
+
+
+.description-product .button {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    width: 70%;
+    margin: 10px auto;
+}
+.description-product .button a{
+    text-decoration: none;
+    color: rgb(3, 66, 129);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description-product .button button {
+    background: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+
+/* ------------------------------------- FIN PAGE PRODUIT ------------------------------------------------ */
+
+
+
+
+
+
+
+
+/* ------------------------------------- DEBUT PAGE QUI SOMMES NOUS ? ------------------------------------- */
+
+.banniere-about  {
+   
+    height: 500px;
+    
+}
+.banniere-about img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position:0 -41px  ;
+}
+
+.banniere-about h2{
+    color: white;
+    font-size: 3vw;
+    position: relative;
+    bottom: 365px;
+    width: 65%;
+    text-align: center;
+    margin: auto;
+}
+
+.banniere-about p {
+   color: white;
+   font-size: 1.2vw;
+   position: relative;
+   bottom: 350px;
+   width: 65%;
+   text-align: center;
+   margin: auto;
+
+}
+
+
+
+.about p{
+    font-size: 25px;
+    margin: 50px auto;
+}
+/* ------------------------------------- FIN PAGE QUI SOMMES NOUS ? ------------------------------------------------ */
+
+
+
+
+
+
+
+
+/* ------------------------------------- DEBUT PAGE CONTACT ------------------------------------- */
+
+
+
+.container-product-bleu {
+    width: 30%;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-product-bleu h2 {
+    
+    color:white; 
+    font-size: 50px;    
+    align-self: center;
+    
+}
+
+.loc{
+    margin-top: 25px;
+}
+
+.loc iframe{
+    width: 100%;
+}
+
+
+/* ------------------------------------- FIN PAGE CONTACT ------------------------------------------------ */
+
+
+
+
+
+
+
+
+/* ------------------------------------- DEBUT PAGE INSCRIPTION ------------------------------------- */
+.container-connexion {
+    width: 30%;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.container-connexion h2 {
+
+    color: white;
+    font-size: 50px;
+    align-self: center;
+
+}
+
+.form-connexion {
+    background: white;
+    padding: 10px 15px;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.form-connexion form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.form-connexion input {
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1vw;
+    border-radius: 10px;
+}
+
+.form-connexion form label {
+    margin: 15px 0 15px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(3, 66, 129);
+}
+
+.form-connexion #send-msg{
+    width: 150px;
+    height: 40px;
+    margin: 10px 0 10px;
+    color: white;
+    background: rgb(3, 66, 129);
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.5s;
+    font-size: 2vh;
+   padding: 0!important;
+}
+
+.form-connexion #send-msg:hover {
+    color: rgb(3, 66, 129);
+    background: white;
+       
+}
+
+.form-connexion textarea {
+    padding: 10px;
+    font-size: 1vw;
+    border-radius: 15px;
 }

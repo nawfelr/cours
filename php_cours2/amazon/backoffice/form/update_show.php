@@ -1,4 +1,6 @@
-<?php session_start();
+<?php
+
+session_start();
 
 
 
@@ -19,6 +21,11 @@ $show = mysqli_fetch_all($tableSelectShow, MYSQLI_ASSOC);
 if ($show['0']['show'] == 0) {
     $sqlModifyProduct = "UPDATE `product` SET `show`=1 WHERE id_produit= $id_produit ";
     mysqli_query($db_connect, $sqlModifyProduct);
+} elseif ($show['0']['show'] == 1) {
+
+    $sqlModifyProduct = "UPDATE `product` SET `show`=0 WHERE id_produit= $id_produit ";
+    mysqli_query($db_connect, $sqlModifyProduct);
+
 }
 
 header('Location:../index.php');

@@ -7,9 +7,9 @@
 * Exo 1: Ecrivez un programme qui affiche votre nom, puis votre âge.
 */
 
-let monAge = parseInt(prompt("Veuillea entrez votre age"));
+let monAge = parseInt(prompt("Veuillez entrez votre age"));
 
-let monNom = prompt("Veuillea entrez votre nom");
+let monNom = prompt("Veuillez entrez votre nom");
 
 
 console.log (" Vous vous appelez : "+ monNom + " et vous avez :" + monAge + " ans.")
@@ -36,6 +36,8 @@ console.log(division);
 * Observez le programme puis tentez de prévoir les valeurs affichées lors de son exécution.
 * Vérifiez vos prévisions en l'exécutant.
 */
+
+
 
 console.log(4 + 5);
 // 9
@@ -84,6 +86,7 @@ scientifique, Anders Celsius, propose une nouvelle graduation au thermomètre.
 La conversion entre les échelles est donnée par [°F] = [°C] x 9/5 + 32. 
 */
 
+
 let tempCel = 37.1;
 
 let tempFar = tempCel *(9/5)+32;
@@ -100,6 +103,14 @@ console.log(tempFar);
 * Il existe plusieurs solutions à cet exercice. 
 * Astuce : vous n'êtes pas limité(e) à l'utilisation de deux variables.
 */
+
+var une = 1;
+var deux = 2;
+
+var permut = deux;
+let deux = une;
+let une = permut;
+
 
 let nombre1 = 5;
 let nombre2 = 3;

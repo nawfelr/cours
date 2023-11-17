@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+body h1 {
+  color: aqua;
+}
+
+main {
+  background-color: pink;
+}
+main .text {
+  width: 250px;
+  background-color: green;
+}
+main .text p {
+  font-size: 20px;
+  color: yellow;
+}
+main .text h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+main .text span {
+  background-color: aliceblue;
+}/*# sourceMappingURL=style.css.map */

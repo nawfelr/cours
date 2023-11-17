@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Article{% endblock %}
+
+{% block body %}
+    <h1>Article</h1>
+
+    <div class="tableau"  style="width:70%; margin:auto;">
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ article.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ article.title }}</td>
+            </tr>
+            <tr>
+                <th>Resume</th>
+                <td>{{ article.resume }}</td>
+            </tr>
+            <tr>
+                <th>Contenu</th>
+                <td>{{ article.contenu }}</td>
+            </tr>
+            <tr>
+                <th>Author</th>
+                <td>{{ article.auteur }}</td>
+            </tr>
+            <tr>
+                <th>CreatedAt</th>
+                <td>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td><img style="height:150px; width:150px;" src="{{ asset('images/article/')}}{{article.image}}" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_article_index') }}">back to list</a>
+
+    <a href="{{ path('app_article_edit', {'id': article.id}) }}">edit</a>
+
+    {{ include('article/_delete_form.html.twig') }}
+    <hr> <hr>
+    <h2>Les commentaires</h2>
+    <hr>  <hr>
+    <h4> Listing des commentaires </h4>
+     {% for commentaire in commentaires %}
+           <div style="font-weight:bold;"> Posté par {{ commentaire.user }} le {{commentaire.createdAt|date('Y-m-d H:i:s')}} </div> 
+            <p>{{ commentaire.contenu }} </p>
+            <hr>
+        
+        {% endfor %}
+ {{ include('commentaires/_form.html.twig') }}
+
+    </div>
+
+     
+
+{% endblock %}
+
